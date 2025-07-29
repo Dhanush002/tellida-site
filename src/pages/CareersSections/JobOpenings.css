@@ -1,0 +1,225 @@
+/* Core container with full-width background */
+.job-openings-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Panel layout */
+.panel-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top text panel */
+.top-panel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Left side with background image */
+.left-panel {
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+      0deg,
+      rgba(63, 61, 61, 0.075),
+      rgba(58, 56, 56, 0.1)
+    ),
+    url("../../assets/careertellida.jpg");
+  background-blend-mode: hard-light, normal;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.highlight-box {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.0025em;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Responsive job cards and buttons */
+.bottom-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1340px;
+  padding: 0 20px;
+}
+
+.bottom-opening-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-opening-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bottom-opening-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #353535;
+  margin-bottom: 20px;
+}
+
+.apply-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #f9f9f9;
+}
+
+.right-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+.modal-email a {
+  color: #e32b1d;
+  text-decoration: none;
+}
+
+.modal-email a:hover {
+  text-decoration: underline;
+}
+
+.close-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #e32b1d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #c2221a;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES: Tablet & Smartphone */
+@media (max-width: 1024px) {
+  .highlight-box {
+    font-size: 36px;
+  }
+  .panel-container {
+    padding: 30px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-panel {
+    height: 300px;
+  }
+  .highlight-box {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+  .bottom-opening-card {
+    max-width: 100%;
+  }
+  .apply-button {
+    font-size: 14px;
+    height: 44px;
+  }
+  .right-arrow {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-box {
+    font-size: 20px;
+  }
+}

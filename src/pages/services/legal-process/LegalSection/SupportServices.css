@@ -1,0 +1,167 @@
+/* SupportServices.css */
+
+/* Reset & base */
+.support-section {
+  padding: 60px 20px;
+  background: #f9fafc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+}
+
+/* Header */
+.support-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.support-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+
+/* Grid container */
+.support-grid {
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner container for top row */
+.support-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Each card */
+.support-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 82, 204, 0);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.support-card:hover,
+.support-card:focus-within {
+  box-shadow: 0 12px 30px rgba(0, 82, 204, 0);
+  transform: translateY(-6px);
+  outline: none;
+}
+
+/* Card title */
+.support-card-title {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Description list */
+.support-card-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: clamp(0.9rem, 1.7vw, 1.05rem);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive layouts */
+
+/* Large tablets and below (max 1024px) */
+@media (max-width: 1024px) {
+  .support-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 5px;
+  }
+
+  .support-section {
+    padding: 50px 15px;
+  }
+}
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+  .support-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .support-title {
+    font-size: 2.2rem;
+  }
+
+  .support-card {
+    padding: 20px 18px;
+  }
+}
+
+/* Smartphones (max 414px, including iPhone 6 Plus, Nexus 5x) */
+@media (max-width: 414px) {
+  .support-section {
+    padding: 40px 15px;
+  }
+
+  .support-title {
+    font-size: 1.9rem;
+  }
+
+  .support-card-description ul {
+    font-size: 0.95rem;
+  }
+
+  .support-card {
+    padding: 18px 15px;
+  }
+}
+
+/* Small smartphones (max 360px, iPhone 5, Nexus 5) */
+@media (max-width: 360px) {
+  .support-section {
+    padding: 30px 12px;
+  }
+
+  .support-title {
+    font-size: 1.7rem;
+  }
+
+  .support-card-description ul {
+    font-size: 0.9rem;
+  }
+
+  .support-card {
+    padding: 15px 12px;
+  }
+}
+
+/* Very small phones (max 320px, iPhone 4) */
+@media (max-width: 320px) {
+  .support-title {
+    font-size: 1.6rem;
+  }
+
+  .support-card-description ul {
+    font-size: 0.85rem;
+  }
+
+  .support-card {
+    padding: 12px 10px;
+  }
+}

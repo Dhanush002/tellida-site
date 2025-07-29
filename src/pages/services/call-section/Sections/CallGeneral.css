@@ -1,0 +1,140 @@
+.call-general-section {
+  padding: 3rem 1rem;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.call-general-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.call-general-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.call-general-title h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Services Grid */
+.call-general-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Service Card */
+.call-service {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #111827;
+}
+
+/* Background image layer (initially hidden) */
+.call-service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../../../../assets/backhover.jpg'); /* adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Overlay layer to maintain readability */
+.call-service::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Ensure text and icons stay above background layers */
+.call-service > * {
+  position: relative;
+  z-index: 2;
+}
+
+.call-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.call-service:hover::before,
+.call-service:hover::after {
+  opacity: 1;
+}
+
+/* Change text color to white on hover */
+.call-service:hover .call-service-text h4,
+.call-service:hover .call-service-text p {
+  color: white;
+}
+
+/* Icon styles */
+.call-service-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.call-service-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Text styles */
+.call-service-text h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.call-service-text p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .call-general-title h3 {
+    font-size: 1.75rem;
+  }
+
+  .call-service {
+    padding: 1.5rem 1rem;
+  }
+
+  .call-service-text h4 {
+    font-size: 1.125rem;
+  }
+
+  .call-service-text p {
+    font-size: 0.95rem;
+  }
+}

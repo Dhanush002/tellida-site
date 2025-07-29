@@ -1,0 +1,322 @@
+:root {
+  --card-width: 250px;
+  --card-gap: 16px;
+}
+
+.remote-case-studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  background: #ffffff;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+/* Top Section */
+.remote-top {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.remote-frame-16 {
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 1%;
+}
+
+.remote-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.remote-subtitle {
+  font-size: 16px;
+  color: #5c5c5c;
+  width: 566px;
+  font-weight: 500;
+}
+
+/* Navigation */
+.remote-frame-31 {
+  display: flex;
+  gap: 16px;
+  margin-right: 60px;
+}
+
+.remote-nav-button {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #171717;
+}
+
+.remote-nav-button:hover {
+  background: #f5f5f5;
+}
+
+/* Cards Grid */
+.remote-scroll-frame {
+  width: auto;
+  max-width: 1250px;
+  height: auto;
+  display: flex;
+}
+
+.remote-scroll-line {
+  max-width: 1250px;
+}
+
+.remote-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+.remote-case-study-card {
+  scroll-snap-align: start;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1),
+    0px 1px 4px rgba(12, 12, 13, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.remote-image {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.remote-content-study {
+  padding: 16px;
+  width: 100%;
+}
+
+.remote-card-title {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.remote-read-time {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #3b3b3b;
+}
+
+/* Learn More Button */
+.remote-learn-more {
+  margin-top: 20px;
+}
+
+.remote-learn-more-button {
+  padding: 16px 24px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remote-learn-more-button:hover {
+  background: #f7f7f7;
+}
+
+/* Modal */
+.modal-overlay-remote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 63, 68, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-remote {
+  background: rgb(15, 49, 61);
+  padding: 20px;
+  border-radius: 16px;
+  width: 800px;
+  max-width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content-remote::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content-remote::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.modal-content-remote::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.close-button-remote {
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title-remote {
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+}
+
+.modal-description-remote {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .remote-title {
+    font-size: 36px;
+  }
+
+  .remote-subtitle {
+    width: 100%;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .remote-case-studies {
+    gap: 30px;
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .remote-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .remote-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .remote-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .remote-frame-31 {
+    display: none;
+  }
+
+  .remote-card-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .remote-read-time {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .remote-learn-more {
+    justify-content: center;
+  }
+
+  .modal-content-remote {
+    width: 95%;
+    max-height: 70vh;
+  }
+
+  .modal-title-remote {
+    font-size: 24px;
+  }
+
+  .modal-description-remote {
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .remote-case-studies{
+    margin-top: 50px;
+  }
+  .remote-title {
+    font-size: 24px;
+  }
+
+  .remote-card-title {
+    font-size: 15px;
+  }
+
+  .remote-read-time {
+    font-size: 12px;
+  }
+}

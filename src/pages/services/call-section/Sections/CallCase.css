@@ -1,0 +1,214 @@
+:root {
+  --card-width: 100%;
+  --card-gap: 1.5rem;
+}
+
+/* ========== Base Section ========== */
+.remote-case-studies {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.remote-top {
+  width: 100%;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.remote-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* ========== Card Layout ========== */
+.remote-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--card-gap);
+  width: 100%;
+  max-width: 1280px;
+}
+
+.remote-case-study-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remote-case-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.remote-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.remote-content-study {
+  padding: 1rem;
+}
+
+.remote-card-title {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.remote-read-time {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* ========== Modal ========== */
+.modal-overlay-remote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 63, 68, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.modal-content-remote {
+  background-color: #1f4a5c;
+  border-radius: 1rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.modal-title-remote {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.modal-description-remote p,
+.modal-description-remote ul {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.modal-description-remote ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Close Button */
+.close-button-remote {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ========== Media Queries ========== */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .remote-title {
+    font-size: 2rem;
+  }
+
+  .modal-content-remote {
+    padding: 1.5rem;
+  }
+
+  .modal-title-remote {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .remote-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .remote-title {
+    font-size: 1.75rem;
+  }
+
+  .modal-content-remote {
+    padding: 1rem;
+  }
+
+  .modal-title-remote {
+    font-size: 1.25rem;
+  }
+
+  .modal-description-remote p,
+  .modal-description-remote ul {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small phones (down to 320px) */
+@media (max-width: 480px) {
+  .remote-case-studies {
+    padding: 20px 10px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    align-self: center;
+  }
+
+  .remote-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .remote-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .remote-card-title {
+    font-size: 1rem;
+  }
+
+  .modal-content-remote {
+    padding: 1rem;
+  }
+
+  .modal-title-remote {
+    font-size: 1.1rem;
+  }
+
+  .modal-description-remote p,
+  .modal-description-remote ul {
+    font-size: 0.875rem;
+  }
+}

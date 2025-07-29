@@ -1,0 +1,152 @@
+/* Mobile Nav Base */
+.navbar-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Menu open state */
+.navbar-mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Header (Logo + Close button) */
+.navbar-mobile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-mobile-logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Close button */
+.close-mobile-menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Nav Links */
+.navbar-mobile-links {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-mobile-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin: 20px 0;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.navbar-mobile-link:hover,
+.navbar-mobile-link:focus {
+  color: #ffa500;
+  outline: none;
+}
+
+/* Social Icons */
+.navbar-mobile-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.navbar-mobile-socials a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.navbar-mobile-socials a:hover,
+.navbar-mobile-socials a:focus {
+  color: #ffa500;
+}
+
+/* -----------------------
+   Responsive Scaling
+----------------------- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar-mobile-link {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+
+  .navbar-mobile-logo img {
+    width: 100px;
+  }
+
+  .navbar-mobile-socials {
+    gap: 16px;
+  }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+  .navbar-mobile-link {
+    font-size: 16px;
+    margin: 14px 0;
+  }
+
+  .close-mobile-menu svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-mobile-socials {
+    gap: 12px;
+  }
+
+  .navbar-mobile-socials a {
+    font-size: 20px;
+  }
+}
+
+/* Ultra Small Phones (320px and below) */
+@media (max-width: 360px) {
+  .navbar-mobile-link {
+    font-size: 15px;
+    margin: 12px 0;
+  }
+
+  .navbar-mobile-logo img {
+    width: 90px;
+  }
+
+  .navbar-mobile-socials a {
+    font-size: 18px;
+  }
+}

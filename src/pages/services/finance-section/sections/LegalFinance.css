@@ -1,0 +1,358 @@
+:root {
+  --card-width: 250px;
+  --card-gap: 16px;
+}
+
+.legal-case-studies-finance {
+  margin-top: 3%;
+  display: flex;
+  height: 650px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+/* Top Section */
+.legal-top-finance {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.legal-frame-16-finance {
+  text-align: left;
+  max-width: 553px;
+  margin-left: 60px;
+  margin-left: 1%;
+}
+
+.legal-title-finance {
+  margin-bottom: 30px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  width: 1200px;
+}
+
+.legal-subtitle-finance {
+  font-size: 16px;
+  color: #5c5c5c;
+  width: 100%;
+  font-weight: 500;
+ 
+}
+
+/* Frame 31 - Navigation */
+.legal-frame-31-finance {
+  display: flex;
+  gap: 16px;
+  margin-right: 60px;
+}
+
+.legal-nav-button-finance {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #171717;
+}
+
+.legal-nav-button-finance:hover {
+  background: #f5f5f5;
+}
+
+/* Scroll Frame */
+.legal-scroll-frame-finance {
+  width: auto;
+  max-width: 1250px;
+  height: 363px;
+  display: flex;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+}
+
+.legal-scroll-line-finance {
+  max-width: 1250px;
+}
+
+.legal-cards-finance {
+  display: flex;
+  gap: 28px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+  
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.legal-case-study-card-finance {
+  scroll-snap-align: start;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1),
+    0px 1px 4px rgba(12, 12, 13, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-left: 1%;
+}
+
+.legal-image-finance {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.legal-content-study-finance {
+  padding: 16px;
+  width: 100%;
+}
+
+.legal-card-title-finance {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+  height: 60px;
+  width: 250px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.legal-read-time-finance {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #3b3b3b;
+}
+
+/* Learn More Button */
+.legal-learn-more-finance {
+  margin-top: 20px;
+}
+
+.legal-learn-more-button-finance {
+  padding: 16px 24px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.legal-learn-more-button-finance:hover {
+  background: #f7f7f7;
+}
+
+.modal-overlay-finance {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 63, 68, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-finance {
+  background: rgb(19, 62, 89);
+  padding: 20px;
+  border-radius: 16px;
+  width: 800px;
+  max-width: 100%;
+  max-height: 80vh; 
+  overflow-y: auto; 
+  text-align: center;
+  position: relative; 
+}
+
+.modal-content-finance::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.modal-content-finance::-webkit-scrollbar-thumb {
+  background-color: #ccc; 
+  border-radius: 4px; 
+}
+
+.modal-content-finance::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+}
+
+.close-button-finance {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title-finance {
+  color: white;
+  margin-bottom: 16px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+}
+
+.modal-description-finance {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+/* Desktop HD+ (2560x1440) & 2K+ */
+@media (min-width: 1920px) {
+  .legal-case-study-card-finance {
+    width: 450px;
+    height: 380px;
+  }
+
+  .legal-title-finance,
+  .modal-title-finance {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+/* Small desktops/laptops (1280px - 1440px) */
+@media (max-width: 1440px) {
+  .legal-case-study-card-finance {
+    width: 350px;
+    height: 330px;
+  }
+
+  .legal-title-finance {
+    font-size: 36px;
+  }
+}
+
+/* Tablets (600px - 1024px) */
+@media (max-width: 1024px) {
+  .legal-case-studies-finance {
+    padding: 40px 20px;
+    gap: 24px;
+    height: auto;
+  }
+
+  .legal-top-finance {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .legal-title-finance {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .legal-cards-finance {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .legal-case-study-card-finance {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .modal-content-finance {
+    width: 95%;
+    max-height: 75vh;
+    padding: 16px;
+  }
+
+  .modal-title-finance {
+    font-size: 28px;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .legal-case-studies-finance {
+    padding: 20px 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .legal-title-finance {
+    font-size: 26px;
+    line-height: 32px;
+    width: 100%;
+  }
+
+  .legal-card-title-finance {
+    font-size: 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .legal-case-study-card-finance {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .legal-image-finance {
+    height: 180px;
+  }
+
+  .modal-title-finance {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .modal-description-finance {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .close-button-finance {
+    font-size: 18px;
+  }
+}
+

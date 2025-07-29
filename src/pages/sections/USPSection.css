@@ -1,0 +1,239 @@
+/* Base styles */
+.usp-section {
+  position: relative;
+  margin-top: 50px;
+  min-height: 880px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.usp-frame {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 780px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Background Image */
+.usp-background,
+.usp-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.usp-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Blur Background */
+.usp-blur {
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.usp-blur-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+  border-radius: 16px;
+}
+
+/* Content */
+.usp-content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.usp-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(227.68deg, rgba(0, 0, 0, 0) 50%, #000000 94.96%);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+/* Text */
+.usp-text {
+  z-index: 2;
+  color: #fafafa;
+}
+
+.usp-text h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.0015em;
+  max-width: 530px;
+  margin-bottom: 20px;
+}
+
+.usp-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.usp-name h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fafafa;
+  margin: 0;
+}
+
+.usp-name p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+/* ============= Responsive Styles ============= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .usp-section {
+    top: 80px;
+    min-height: 720px;
+  }
+
+  .usp-frame {
+    height: 680px;
+  }
+
+  .usp-content {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .usp-text h1 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .usp-name h2 {
+    font-size: 18px;
+  }
+
+  .usp-name p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .usp-section {
+    top: 40px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .usp-frame {
+    width: 100%;
+    height: 600px;
+  }
+
+  .usp-background,
+  .usp-blur {
+    height: 100%;
+  }
+
+  .usp-content {
+    width: 100%;
+    height: 260px;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    padding: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+
+  .usp-overlay {
+    display: none;
+  }
+
+  .usp-text h1 {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  .usp-footer {
+    gap: 8px;
+  }
+
+  .usp-name h2 {
+    font-size: 16px;
+  }
+
+  .usp-name p {
+    font-size: 12px;
+  }
+
+  .usp-blur {
+    display: none;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  .usp-section {
+    padding: 8px;
+    top: 20px;
+    min-height: 520px;
+  }
+
+  .usp-frame {
+    height: 520px;
+  }
+
+  .usp-content {
+    height: 240px;
+    padding: 16px;
+  }
+
+  .usp-text h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .usp-name h2 {
+    font-size: 15px;
+  }
+
+  .usp-name p {
+    font-size: 11px;
+  }
+}

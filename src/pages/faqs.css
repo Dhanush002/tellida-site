@@ -1,0 +1,140 @@
+.faq-container {
+  max-width: 60%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Heading wrapper to center the heading and underline */
+.faq-heading-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sub-title{
+  color: #e9554a;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.faq-heading {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Accordion styling */
+.accordion-item {
+  margin-bottom: 15px;
+  background-color: rgb(210, 208, 208);
+  border-radius: 40px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item:hover {
+  background-color: rgb(12, 6, 68);
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.accordion-item:hover .accordion-header {
+  color: white;
+}
+
+.question-mark {
+  background-color: white;
+  color: orange;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.accordion-item:hover .question-mark {
+  background-color: #0b3e4d;
+  color: orange;
+}
+
+.accordion-title {
+  flex: 1;
+  font-size: 20px;
+}
+
+.accordion-icon {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.accordion-item:hover .accordion-icon {
+  color: orange;
+}
+
+.accordion-content {
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 30px 15px;
+  }
+
+  .faq-heading {
+    font-size: 1.6rem;
+  }
+
+  .question-mark {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .accordion-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 20px 10px;
+  }
+
+  .faq-heading {
+    font-size: 1.4rem;
+  }
+
+  .question-mark {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .accordion-icon {
+    font-size: 1rem;
+  }
+}

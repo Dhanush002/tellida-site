@@ -1,0 +1,134 @@
+/* FinanceExpertise.css */
+
+.finance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    grid-template-rows: repeat(2, auto);    /* 2 rows, adjust height automatically */
+    gap: 1rem;  
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-left: 11%; 
+    margin-right: 11%;    
+    background-color: #ffffff;                       /* Space between grid items */
+    line-height: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .finance-grid {
+      grid-template-columns: 1fr;  /* 1 column per row */
+      grid-template-rows: auto;    /* Adjust height automatically */
+    }
+  }
+  
+  /* Ensure each card looks good */
+  .finance-card {
+    background-color: #edebeb;  
+    padding: 1.0rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+ /* Styling for the title with a line below */
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #FFA500;  /* Orange line below the title */
+    padding-bottom: 1.3rem;  /* Optional: to create some spacing between the title and the line */
+  }
+  
+  .underline {
+    width: 40px;
+    height: 3px;
+    background-color: #FFA500;
+    margin-bottom: 1rem;
+  }
+
+  /* Styling for the description */
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for the points list */
+  ul {
+    list-style-type: none;  /* Remove default list bullets */
+    padding-left: 0;        /* Remove default padding */
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.75rem 0;
+    font-size: 1rem;
+  }
+  
+  .arrow-icon {
+    color: #FFA500;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    line-height: 1.5;
+  }
+  
+
+  .accordion-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+    width: 100%;
+    max-width: 180px;
+    transition: background 0.3s ease;
+  }
+  
+  .accordion-toggle:hover {
+    background-color: #e59400;
+  }
+  
+  .accordion-icon {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .accordion-content {
+    margin-top: 0.5rem;
+    background-color: #fff7e6;
+    padding: 1rem;
+    border-left: 4px solid #FFA500;
+    border-radius: 4px;
+  }
+
+  .finance-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .title-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }

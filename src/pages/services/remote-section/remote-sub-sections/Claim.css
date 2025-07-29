@@ -1,0 +1,304 @@
+.claim-section {
+  width: 100%;
+  height: 900px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  top: 0px;
+}
+
+.claim-container {
+  width: 1196px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 32px;
+}
+
+.claim-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: left; 
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.claim-steps-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 16px;
+  left: 5%;
+
+}
+
+.claim-steps {
+  display: flex;
+  justify-content: flex-start; 
+  position: relative;
+  z-index: 2;
+  gap: 40px; 
+}
+
+.claim-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 300px;
+  height: 400px;
+
+}
+.claim-step-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 300px;
+  height: 400px;
+  margin-left: 110px;
+}
+
+.claim-step-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  height: 400px;
+  margin-left : 100px
+}
+
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: #323232;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-text {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #fafafa;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+
+}
+
+.step-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #282828;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.step-description {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #353535;
+  text-align: left; 
+}
+
+.horizontal-line {
+  position: absolute;
+  height: 4px;
+  background: #e9554a;
+  z-index: 1;
+}
+
+.horizontal-line-1 {
+  width: 348px;
+  left: 80px;
+  top: 31px;
+}
+
+.horizontal-line-2 {
+  width: 348px;
+  left: 530px;
+  top: 31px;
+}
+
+.claim-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; 
+  
+  
+}
+
+.mobile-line {
+  display: none; 
+}
+
+.claim-button {
+  padding: 16px 24px;
+  background: #cf271a;
+  border-radius: 8px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #fffefa;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.claim-button:hover {
+  background: #e9554a;
+}
+
+
+@media (max-width: 768px) {
+
+  .claim-section {
+
+    width: 100%;
+    height: auto;
+    top: 50px;
+    margin-bottom: 120px;
+
+  }
+  .claim-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    
+  
+  }
+  
+  .claim-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .claim-steps-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    height: auto;
+  }
+  
+  .claim-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+   height: auto;
+   position: relative;
+  }
+  
+  .claim-step {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
+    margin-bottom: 0;
+    height: auto;
+  }
+  
+  .claim-step-2{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
+    position: relative;
+    margin-left: 0;
+  }
+  
+  .claim-step-3{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
+    position: relative;
+    margin-left: 0;
+    height: auto;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .step-content {
+    text-align: center;
+  }
+  
+  .step-title {
+    font-size: 22px;
+    margin-top: 0;
+  }
+  
+  .step-description {
+    font-size: 16px;
+  }
+  
+  .horizontal-line {
+    width: 4px;
+    height: 40px;
+    margin: 16px 0;
+  }
+  
+  .claim-button-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    
+  }
+  
+  .claim-button {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+  
+  .horizontal-line-1 {
+   display: none;
+  }
+  
+  .horizontal-line-2{
+    display: none;
+  }
+
+  .mobile-line {
+    display: block; 
+    width: 4px; 
+    height: 100px; 
+    background: #e9554a; 
+    margin-left: 20px;
+
+  }
+  } 

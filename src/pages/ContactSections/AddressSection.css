@@ -1,0 +1,197 @@
+:root {
+  --highlight-color: #e9554a;
+  --font-primary: "SF Pro Display", sans-serif;
+  --gap-outer: 24px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Address Section Container */
+.address-section-contact {
+  background: #ffffff;
+  width: 100%;
+  padding: var(--gap-outer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin: 0 auto;
+}
+
+/* Address Content */
+.address-content-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Header */
+.address-header-contact {
+  font-family: var(--font-primary);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  max-width: 622px;
+}
+
+.address-header-contact .highlight-contact {
+  color: var(--highlight-color);
+}
+
+/* Address Cards Container */
+.address-cards-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Shared Address Card Styles */
+.address-card-contact,
+.corporate-contact {
+  width: 100%;
+  max-width: 340px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.corporate-contact {
+  background: var(--highlight-color);
+  color: #fafafa;
+}
+
+.card-header-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.normal-corparate {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-location-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag-icon-contact {
+  width: 32px;
+  height: 23px;
+}
+
+.card-location-contact span {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.corporate-contact .card-location-contact span {
+  color: #fafafa;
+}
+
+/* Card Content */
+.card-details-contact {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353535;
+}
+
+.phone-address-contact,
+.small-phone-addres-contact {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.small-phone-addres-contact {
+  color: var(--highlight-color);
+}
+
+.corporate-contact .card-details-contact {
+  color: #fafafa;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .address-header-contact {
+    font-size: clamp(24px, 5vw, 36px);
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .address-cards-contact {
+    gap: 20px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .address-section-contact {
+    padding: 24px 12px;
+    margin-top: 5%;
+  }
+
+  .address-content-contact {
+    gap: 32px;
+  }
+
+  .address-cards-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-card-contact,
+  .corporate-contact {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    gap: 12px;
+    height: auto;
+  }
+
+  .card-header-contact h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .flag-icon-contact {
+    width: 24px;
+    height: 16px;
+  }
+
+  .card-location-contact span {
+    font-size: 16px;
+  }
+
+  .card-details-contact {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

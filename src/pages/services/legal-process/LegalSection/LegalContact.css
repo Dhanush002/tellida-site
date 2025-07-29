@@ -1,0 +1,333 @@
+.global-contacts-section-legal-contact {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    top: 100px;
+    margin-bottom: 7%;
+    
+  }
+  
+  .frame-306-legal-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 680px;
+    margin-bottom: 5%;
+    border-radius: 16px;
+    padding: 32px;
+  }
+  
+  .frame-316-legal-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  .frame-316-legal-contact h1 {
+    width: 592px;
+    gap: 0px;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: #171717;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 67.2px;
+    letter-spacing: -0.0025em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+  }
+  
+  .frame-316-legal-contact p {
+    
+    color: #5c5c5c;
+    width: 592px;;
+    gap: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 0;
+  }
+  
+  .frame-304-legal-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 850px;
+    height: 100%;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+  }
+  
+  .frame-314-legal-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .frame-305-legal-contact h4 {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #171717;
+  }
+  
+  .frame-305-legal-contact p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .email-legal-contact {
+    color: #cf271a;
+    font-weight: bold;
+  }
+  
+  .frame-312-legal-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .frame-303-legal-contact {
+    width: Fill (528px) px;
+    height: Hug (86px) px;
+    gap: var(--sds-size-space-150);
+  
+  }
+  
+  .frame-303-legal-contact label,
+  .frame-306-legal-contact label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .frame-302-legal-contact {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .frame-302-legal-contact input {
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+  }
+  
+  .frame-310-legal-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+  
+  .next-button-legal-contact {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background: #cf271a;
+    color: #fffefa;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 30%;
+    height: 60px;
+    padding: var(--sds-size-space-400) var(--sds-size-space-600)
+      var(--sds-size-space-400) var(--sds-size-space-600);
+    gap: var(--sds-size-space-300);
+    border-radius: 8px;
+    
+  }
+  
+  .next-button-legal-contact:hover {
+    background: #e9554a;
+  }
+  
+  .back-button-legal-contact {
+    font-size: 20px;
+    font-weight: 600;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 30%;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 5%;
+  }
+  
+  .send-button-legal-contact {
+    font-size: 20px;
+    font-weight: 600;
+    background: #cf271a;    
+    color: #fffefa;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 30%;
+    height: 60px;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .global-contacts-section-legal-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0px;
+      margin: 0 auto;
+      height: 100%;
+      position: relative;
+      top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .frame-306-legal-contact {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      padding: 16px;
+      border-radius: 12px;
+    }
+  
+    .frame-316-legal-contact {
+      margin-bottom: 24px;
+     
+    }
+  
+    .frame-316-legal-contact h1 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 12px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .frame-316-legal-contact p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .frame-304-legal-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      background: #ffffff;
+      padding: 16px;
+      border: 1px solid #e3e3e3;
+      border-radius: 12px;
+    }
+  
+    .frame-314-legal-contact {
+      gap: 24px;
+    }
+  
+    .frame-305-legal-contact h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  
+    .frame-305-legal-contact p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .email-legal-contact {
+      font-size: 14px;
+      color: #cf271a;
+      font-weight: bold;
+    }
+  
+    .frame-312-legal-contact {
+      gap: 12px;
+    }
+  
+    .frame-303-legal-contact {
+      width: 100%;
+      gap: 8px;
+    }
+  
+    .frame-303-legal-contact label {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  
+    .frame-302-legal-contact {
+      padding: 12px;
+      border-radius: 8px;
+    }
+  
+    .frame-302-legal-contact input {
+      font-size: 14px;
+    }
+  
+    .frame-310-legal-contact {
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .next-button-legal-contact {
+      font-size: 16px;
+      width: 100%;
+      max-width: 300px;
+      height: 48px;
+      border-radius: 8px;
+    }
+
+    .back-button-legal-contact{
+      font-size: 16px;
+      width: 100%;
+      max-width: 300px;
+      height: 48px;
+      border-radius: 8px;
+    }
+
+    .send-button-legal-contact{
+      font-size: 16px;
+      width: 100%;
+      max-width: 200px;
+      height: 48px;
+      border-radius: 8px;
+    }
+
+  }
+  

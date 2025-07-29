@@ -1,0 +1,45 @@
+
+
+.global-container {
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+    padding: 60px 20px;
+    position: relative;
+    
+  }
+  
+  .global-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+
+  
+  .global-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  
+
+  @media (max-width: 768px) {
+  .global-container {
+    padding: 0px;
+   position: relative;
+    top: 0px;
+  }
+
+  .global-content {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .global-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,373 @@
+/* Section Container */
+.journey-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+  gap: 35px;
+  background: #ffffff;
+  margin: 0 auto;
+  top: 0px;
+}
+
+/* Header */
+.journey-header {
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.journey-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #171717;
+}
+
+.journey-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #353535;
+}
+
+/* Timeline */
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.timeline-year {
+  display: flex;
+  justify-content: center; 
+  gap: 16px;
+  width: 200px;
+  height: 240px;
+}
+
+.timeline-circle-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timeline-circle {
+  width: 40px;
+  height: 45px; 
+  background: #F6BDB9;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 50%;
+}
+.timeline-circle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #E9554A;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 250px;
+  background: linear-gradient(180deg, #f6bdb9 0%, #f6bdb9 100%);
+  position: relative;
+  z-index: 0;
+}
+
+.timeline-year h3 {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+  margin-top: 80px;
+}
+
+/* Timeline Details */
+.timeline-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 693px;
+
+}
+
+.timeline-details h4 {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.timeline-details p,
+.timeline-description {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353535;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 700;
+}
+
+/* Timeline Image */
+.timeline-image-container {
+  width: 490px;
+  height: 354px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #d9d9d9; 
+}
+
+.timeline-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Unique Styles for Each Description */
+.description-0 {
+  width: 693px;
+  height: 48px;
+  gap: 0px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.description-1 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+.description-2 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+.description-3 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+.description-4 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+.description-5 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+.description-6 {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  width: 592px;
+  height: 144px;
+}
+
+/* General Timeline Layout for Small Screens */
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 16px;
+    gap: 24px;
+    align-items: flex-start;
+    position: relative;
+    top: 200px;
+  }
+
+  .journey-header {
+    text-align: left;
+    width: 100%;
+  }
+
+  .journey-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .journey-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .journey-timeline {
+    gap: 48px;
+    width: 100%;
+  }
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-bottom: 0px;
+ 
+  
+}
+
+/* Timeline Year and Circle */
+.timeline-year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 50px; 
+}
+
+.timeline-circle {
+  width: 16px;
+  height: 16px;
+  background: #e9554a;
+  border: 2px solid #f6bdb9;
+  border-radius: 50%;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #f6bdb9 100%);
+  margin: 4px 0;
+}
+
+/* Year */
+.timeline-year h3 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #171717;
+  text-align: center;
+}
+
+/* Timeline Details */
+.timeline-details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: calc(100% - 74px); 
+  
+}
+
+.timeline-details h4{
+  margin-bottom: 0px;
+}
+
+.timeline-details p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #353535;
+  margin: 0;
+  width: 289px;
+}
+
+.timeline-image-container {
+  width: 250px; 
+  height: 200px; 
+  border-radius: 8px;
+  background: #d9d9d9;
+}
+
+.timeline-image {
+  width: 100%;
+ 
+  border-radius: 8px;
+  object-fit: cover;
+}
+.timeline-circle::after{
+  display: none;
+}
+
+.timeline-description {
+  width: 100%;
+  height: auto;
+}
+
+}

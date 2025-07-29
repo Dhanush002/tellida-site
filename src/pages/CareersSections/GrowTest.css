@@ -1,0 +1,290 @@
+.grow-test-us-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    margin: 0 auto;
+    gap: 54px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  img{
+    border-radius: 10%;
+  }
+  
+  .grow-test-wrapper{
+  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 64px;
+  }
+  /* Left Frame */
+  .frame-159 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+    max-width: 450px;
+    height: 608px;
+    margin-left: 10%;
+  }
+  
+  .section-title {
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #e9554a;
+    margin: 0;
+  }
+  
+  .grow-with-us-title {
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin: 0;
+  }
+  
+  .grow-with-us-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #353535;
+    margin: 0;
+    width: 415px;
+  }
+  
+  .grow-with-us-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 197px;
+    height: 60px;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fffefa;
+    background-color: #282828;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;
+    padding: var(--sds-size-space-400) var(--sds-size-space-600)
+    var(--sds-size-space-400) var(--sds-size-space-600);
+    gap: var(--sds-size-space-300);
+    border-radius: 8px;
+  
+  }
+  
+  .grow-with-us-button:hover {
+    background-color: #353535;
+  }
+  
+  .chevron-right {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 8px;
+  }
+  
+  /* Right Frame */
+  .frame-197 {
+    position: relative;
+    width: 626px;
+    height: auto;
+    margin-right: 10%;
+  }
+  
+  .frame-197-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  .grow-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .grow-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: left;
+    position: relative;
+  }
+  
+  .grow-close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .grow-modal-title {
+    margin-bottom: 16px;
+      font-family: "SF Pro Display", sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: #000000;
+  }
+  
+  .grow-testimonial {
+    margin-bottom: 16px;
+  }
+  
+  .grow-testimonial p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3b3b3b;
+  }
+  
+  .grow-chevron-icon{
+    width: 20px; 
+    height: 20px;
+    margin-left: 16px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 16px 0;
+  }
+  
+  .grow-quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Container */
+    .grow-test-us-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0px;
+      gap: 32px;
+      top: auto;
+      height: auto;
+      position: relative;
+      top: 287px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+    }
+  
+    .grow-test-wrapper{
+      flex-direction: column;
+      gap: 24px;
+    }
+    /* Left Frame (Text Section) */
+    .frame-159 {
+      text-align: center; 
+      width: 90%; 
+      align-items: left; 
+      gap: 16px; 
+      margin: 0 auto;
+      height: auto;
+    }
+  
+
+    .section-title {
+      font-size: 12px; 
+    }
+  
+    .grow-with-us-title {
+      font-size: 24px; 
+      line-height: 1.4; 
+    }
+  
+    .grow-with-us-description {
+      font-size: 16px; 
+      line-height: 1.5;
+      width: 100%; 
+      text-align: left;
+      margin-top: 0px;
+    }
+  
+    .grow-with-us-button {
+      width: 50%; 
+      height: 48px;
+      font-size: 16px; 
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+  
+    /* Right Frame (Image Section) */
+    .frame-197 {
+      width: 100%;
+      height: auto; 
+    }
+  
+    .frame-197-img {
+      width: 100%;
+      height: auto; 
+      border-radius: 8px; 
+    }
+  
+    /* Modal */
+    .grow-modal-content {
+      padding: 16px; 
+      max-width: 90%; 
+      font-size: 14px; 
+    }
+  
+    .grow-modal-title {
+      font-size: 24px; 
+      margin-bottom: 12px; 
+    }
+  
+    .grow-testimonial p {
+      font-size: 14px;
+      line-height: 1.4; 
+      text-align: center;
+    }
+  
+    .grow-quote{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  

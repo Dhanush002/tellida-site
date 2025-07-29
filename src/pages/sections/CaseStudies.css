@@ -1,0 +1,162 @@
+.legal-case-studies-home {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.legal-top-home {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.legal-title-section {
+  text-align: center;
+  align-items: center;
+    color: #e9554a;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.legal-title-homee {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.legal-subtitle-home {
+  font-size: 16px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.legal-scroll-line-home {
+  overflow-x: auto;
+}
+
+.legal-scroll-frame-home {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.legal-cards-home {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.legal-case-study-card-home {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 280px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.legal-case-study-card-home:hover {
+  transform: translateY(-5px);
+}
+
+.legal-image-home {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.legal-content-study-home {
+  padding: 16px;
+}
+
+.legal-card-title-home {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.legal-read-time-home {
+  font-size: 14px;
+  color: #c4b31e;
+}
+
+/* Modal */
+.modal-overlay-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content-home {
+  background: rgb(43, 134, 157);
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-button-home {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title-home {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-description-home {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Responsive layout for desktop: 4 cards per row */
+@media (min-width: 1024px) {
+  .legal-scroll-frame-home {
+    overflow-x: hidden;
+  }
+
+  .legal-cards-home {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .legal-case-study-card-home {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-bottom: 24px;
+  }
+}
+
+/* Tablet view: 2 cards per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .legal-case-study-card-home {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}

@@ -1,0 +1,240 @@
+/* ========== Variables for easy theming and scaling ========== */
+:root {
+  --color-primary: #e9554a;
+  --color-text-dark: #171717;
+  --color-text-muted: #353535;
+  --font-family-heading: 'SF Pro Display', sans-serif;
+  --font-family-base: 'Arial', sans-serif;
+
+  --max-width-desktop: 1200px;
+  --max-width-large-desktop: 1600px;
+
+  --gap-logo-row: 64px;
+  --gap-logo-row-tablet: 48px;
+  --gap-logo-row-mobile: 24px;
+}
+
+/* Certification Section Container */
+.certification-container {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  padding: 6rem 1.5rem 4rem;
+  background: #fff url("../../assets/Awards.png") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Content Wrapper */
+.certification-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--max-width-desktop);
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Badge */
+.certification-badge {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--font-family-base);
+}
+
+/* Heading */
+.certification-heading {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 2.25rem);
+  color: var(--color-text-dark);
+  letter-spacing: -0.04em;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  max-width: 800px;
+}
+
+/* Description Text */
+.certification-description {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  line-height: 1.6;
+  margin: 0 auto 3rem auto;
+  padding: 0 0.5rem;
+}
+
+
+/* Special margin for ISO logo only */
+.iso-logo-margin {
+  margin-top: 15%;    /* adjust spacing as needed */
+  margin-bottom: 10%; /* adjust spacing as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Logos Container for slider */
+.certification-logos-slider {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Each slide wrapper */
+.certification-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Logo images */
+.certification-logo {
+  justify-content: center;
+  max-width: 220px;
+  max-height: 180px;
+  object-fit: contain;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.certification-logo:hover,
+.certification-logo:focus {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(233, 85, 74, 0.35));
+  outline: none;
+}
+
+/* ===== Responsive breakpoints for popular resolutions ===== */
+
+/* Ultra-wide desktop (2560x1440) */
+@media (min-width: 2560px) {
+  :root {
+    --max-width-desktop: var(--max-width-large-desktop);
+  }
+  .certification-logo {
+    max-width: 280px;
+    max-height: 220px;
+  }
+}
+
+/* Large desktops (1920x1200, 1680x1050, 1600x1200, 1440x900) */
+@media (min-width: 1441px) and (max-width: 2559px) {
+  :root {
+    --max-width-desktop: 1400px;
+  }
+  .certification-logo {
+    max-width: 260px;
+    max-height: 200px;
+  }
+}
+
+/* Medium desktops and large laptops (1366x768, 1280x1024, 1280x800, 1280x768, 1152x864, 1024x768) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  :root {
+    --max-width-desktop: 1100px;
+  }
+  .certification-logo {
+    max-width: 220px;
+    max-height: 180px;
+  }
+}
+
+/* Small laptops and large tablets (800x600 to 1024x768) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .certification-container {
+    min-height: 700px;
+    padding: 3rem 1.25rem;
+    background-size: contain;
+  }
+  .certification-content {
+    max-width: 90%;
+  }
+  .certification-description {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .certification-logos-slider {
+    max-width: 100%;
+  }
+  .certification-logo {
+    max-width: 180px;
+    max-height: 140px;
+  }
+}
+
+/* Tablets portrait and smaller (e.g. iPad 768x1024, Nexus 10 800x1280, Nexus 7 600x960) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .certification-container {
+    padding: 2.5rem 1rem;
+    min-height: auto;
+    background-size: contain;
+  }
+  .certification-content {
+    max-width: 100%;
+  }
+  .certification-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  .certification-logo {
+    max-width: 150px;
+    max-height: 120px;
+  }
+}
+
+/* Large smartphones landscape (e.g. iPhone 6 Plus 414x736, Nexus 5x 412x684) */
+@media (min-width: 414px) and (max-width: 599px) {
+  .certification-container {
+    padding: 2rem 1rem;
+    background-size: contain;
+  }
+  .certification-content {
+    padding: 0 1rem;
+  }
+  .certification-description {
+    font-size: 0.9rem;
+  }
+  .certification-logo {
+    max-width: 130px;
+    max-height: 110px;
+  }
+}
+
+/* Small smartphones portrait (e.g. iPhone 6 375x667, Nexus 5 360x598, iPhone 5 320x568, iPhone 4 320x480) */
+@media (max-width: 413px) {
+  .certification-container {
+    padding: 1.5rem 0.75rem;
+    background-size: contain;
+  }
+  .certification-content {
+    padding: 0 0.75rem;
+  }
+  .certification-heading {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+  }
+  .certification-description {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+  .certification-logo {
+    max-width: 110px;
+    max-height: 90px;
+  }
+}

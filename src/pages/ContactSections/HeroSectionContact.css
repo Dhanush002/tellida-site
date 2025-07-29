@@ -1,0 +1,156 @@
+/* Hero Section - Desktop */
+.hero-section-contact {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* Ensure the background image is centered */
+  border-radius: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 850px; /* Default height for large screens */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Overlay wrapper for layout control */
+.hero-overlay-contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main Heading */
+.hero-content-contact {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 718px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content-contact h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Contact Info Box */
+.contact-info-box {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 592px;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 32px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-box p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  max-width: 524px;
+}
+
+/* ============ Tablet ============ */
+@media (max-width: 1024px) {
+  .hero-section-contact {
+    height: 680px;
+    top: 100px;
+  }
+
+  .hero-content-contact {
+    width: 85%;
+    top: 52%;
+  }
+
+  .hero-content-contact h1 {
+    font-size: 36px;
+  }
+
+  .contact-info-box {
+    bottom: 32px;
+    padding: 20px;
+    max-width: 520px;
+  }
+
+  .contact-info-box p {
+    font-size: 18px;
+  }
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 768px) {
+  .hero-section-contact {
+    height: 640px;
+    border-radius: 32px;
+    margin: 30px auto;
+    top: 80px;
+    padding: 0 16px;
+  }
+
+  .hero-content-contact {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-content-contact h1 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .contact-info-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px auto;
+    text-align: center;
+  }
+
+  .contact-info-box p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+/* ============ Extra Small Mobile ============ */
+@media (max-width: 480px) {
+  .hero-section-contact {
+    height: 500px;
+    top: 60px;
+  }
+
+  .hero-content-contact h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .contact-info-box p {
+    font-size: 14px;
+  }
+}

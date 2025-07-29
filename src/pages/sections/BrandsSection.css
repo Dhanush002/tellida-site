@@ -1,0 +1,49 @@
+.brands-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.frame-135 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brands-heading p:first-child {
+  color: #e9554a;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.brands-heading p:last-child {
+  font-size: 32px;
+  color: #000;
+  font-weight: 600;
+  margin: 10px 0 40px;
+}
+
+.brands-slider {
+  padding: 0 20px;
+}
+
+.brand-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.brand-image {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.brand-image:hover {
+  filter: grayscale(0%);
+}

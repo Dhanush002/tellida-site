@@ -1,0 +1,208 @@
+:root {
+  --main-color: #e9554a;
+  --text-dark: #000;
+  --text-light: #fafafa;
+  --font-heading: 'SF Pro Display', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+/* Address Section Container */
+.address-section-about {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Address Content Wrapper */
+.address-content-about {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Cards Layout */
+.address-cards-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Card Styling */
+.address-card-about,
+.corporate-about {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 32px;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.corporate-about {
+  background-color: var(--main-color);
+  color: var(--text-light);
+}
+
+.card-header-about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-location-about {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag-icon-about {
+  width: 28px;
+  height: 20px;
+}
+
+.card-location-about span {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--text-dark);
+}
+
+.corporate-about .card-location-about span {
+  color: var(--text-light);
+}
+
+.card-details-about {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-body);
+  color: #353535;
+  line-height: 1.5;
+}
+
+.corporate-about .card-details-about {
+  color: var(--text-light);
+}
+
+.phone-address-about,
+.small-phone-addres-about {
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.small-phone-addres-about {
+  color: var(--main-color);
+}
+
+.corporate-about .small-phone-addres-about {
+  color: var(--text-light);
+}
+
+.normal-corparate {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  margin-top: 5px;
+}
+
+/* ========== Responsive Layouts ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .address-content-about {
+    padding: 0 10px;
+  }
+
+  .address-card-about,
+  .corporate-about {
+    max-width: 100%;
+  }
+
+  .card-location-about span {
+    font-size: 18px;
+  }
+
+  .card-details-about {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .address-section-about {
+    padding: 40px 16px;
+  }
+
+  .address-cards-about {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address-card-about,
+  .corporate-about {
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .card-location-about span {
+    font-size: 16px;
+  }
+
+  .card-details-about {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .flag-icon-about {
+    width: 24px;
+    height: 16px;
+  }
+
+  .phone-address-about,
+  .small-phone-addres-about {
+    font-size: 14px;
+  }
+
+  .normal-corparate {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .address-section-about {
+    padding: 30px 12px;
+  }
+
+  .card-location-about span {
+    font-size: 15px;
+  }
+
+  .card-details-about,
+  .normal-corparate {
+    font-size: 13.5px;
+  }
+
+  .phone-address-about,
+  .small-phone-addres-about {
+    font-size: 13.5px;
+  }
+}

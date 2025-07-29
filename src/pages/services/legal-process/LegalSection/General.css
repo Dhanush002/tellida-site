@@ -1,0 +1,88 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+.general-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.general-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.general-title h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.general-benefits {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem 1.5rem;
+  align-items: stretch; /* ensure cards stretch equally */
+}
+
+.benefit {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+
+  /* Make all cards the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 220px; /* fixed height - adjust as needed */
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon img {
+  max-width: 60px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  flex-grow: 1; /* takes remaining space so text aligns nicely */
+}
+
+.benefit-text h4 {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .general-benefits {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .general-benefits {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .general-benefits {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+}

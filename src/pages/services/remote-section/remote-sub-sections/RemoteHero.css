@@ -1,0 +1,145 @@
+/* Base Styles */
+.remote-hero {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.remote-hero-content {
+  max-width: 900px;
+}
+
+.remote-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 15px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.remote-tagline {
+  max-width: 600px;
+}
+
+.remote-tagline-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop and Laptop Resolutions */
+/* 2560x1440, 1920x1200, 1680x1050, 1600x1200, 1440x900, 1366x768, 1280x1024, 1280x800, 1280x768, 1152x864, 1024x768, 800x600 */
+@media screen and (max-width: 1366px) {
+  .remote-hero {
+    height: 500px;
+  }
+  .remote-hero-title {
+    font-size: 3rem;
+  }
+  .remote-tagline-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .remote-hero {
+    height: 450px;
+  }
+  .remote-hero-title {
+    font-size: 2.5rem;
+  }
+  .remote-tagline-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .remote-hero {
+    height: 400px;
+    padding: 0 15px;
+  }
+  .remote-hero-title {
+    font-size: 2.2rem;
+  }
+  .remote-tagline-text {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+/* iPad (768x1024), iPad Pro (1024x1366), Nexus 10 (800x1280), Nexus 7 (600x960) */
+@media screen and (max-width: 768px) {
+  .remote-hero {
+    height: 350px;
+    padding: 0 12px;
+  }
+  .remote-hero-title {
+    font-size: 2rem;
+  }
+  .remote-tagline-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .remote-hero {
+    height: 320px;
+  }
+  .remote-hero-title {
+    font-size: 1.8rem;
+  }
+  .remote-tagline-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Smartphones */
+/* Nexus 5 (360x598), Nexus 5x (412x684), iPhone 6 Plus (414x736), iPhone 6 (375x667), iPhone 5 (320x568), iPhone 4 (320x480) */
+@media screen and (max-width: 414px) {
+  .remote-hero {
+    height: 280px;
+    padding: 0 10px;
+  }
+  .remote-hero-title {
+    font-size: 1.5rem;
+  }
+  .remote-tagline-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .remote-hero {
+    height: 250px;
+  }
+  .remote-hero-title {
+    font-size: 1.3rem;
+  }
+  .remote-tagline-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .remote-hero {
+    height: 220px;
+  }
+  .remote-hero-title {
+    font-size: 1.1rem;
+  }
+  .remote-tagline-text {
+    font-size: 0.75rem;
+  }
+}

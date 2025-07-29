@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #cf271a;
+  --secondary-color: #e9554a;
+  --text-color: #171717;
+  --bg-color: #ffffff;
+  --input-bg: #fafafa;
+  --border-color: #e3e3e3;
+  --font-main: "SF Pro Display", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+/* Global Section Styles */
+.global-contacts-section {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 64px 24px;
+  box-sizing: border-box;
+  margin-top: 3%;
+}
+
+/* Main Form Container */
+.frame-306 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  background: transparent;
+}
+
+/* Heading Section */
+.frame-316 {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+.frame-316 h1 {
+  font-family: var(--font-main);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.frame-316 p {
+  font-family: var(--font-secondary);
+  font-size: clamp(14px, 2vw, 18px);
+  color: #5c5c5c;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Form Container */
+.frame-304 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  background: var(--bg-color);
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* Each Form Step */
+.frame-314 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Top Info */
+.frame-305 h4 {
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--text-color);
+}
+
+.frame-305 p {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: #000;
+}
+
+.email {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Inputs */
+.frame-312 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.frame-303 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.frame-303 label {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: #000;
+}
+
+.frame-302 {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.frame-302 input {
+  width: 100%;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #000;
+}
+
+/* Navigation Buttons */
+.frame-310 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.next-button,
+.back-button,
+.send-button {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 52px;
+  min-width: 140px;
+}
+
+.next-button,
+.send-button {
+  background: var(--primary-color);
+  color: #fffefa;
+  border: none;
+}
+
+.next-button:hover,
+.send-button:hover {
+  background: var(--secondary-color);
+}
+
+.back-button {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.back-button:hover {
+  background: #f5f5f5;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .global-contacts-section {
+    padding: 48px 16px;
+  }
+
+  .frame-306 {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .frame-304 {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .frame-316 h1 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .frame-316 p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .frame-305 h4 {
+    font-size: 18px;
+  }
+
+  .frame-305 p,
+  .email {
+    font-size: 14px;
+  }
+
+  .frame-303 label {
+    font-size: 14px;
+  }
+
+  .frame-302 {
+    padding: 12px;
+  }
+
+  .frame-302 input {
+    font-size: 14px;
+  }
+
+  .next-button,
+  .back-button,
+  .send-button {
+    font-size: 16px;
+    width: 100%;
+    max-width: none;
+  }
+}

@@ -1,0 +1,274 @@
+/* Global Styles */
+.global-contacts-section-home {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  padding: 0;
+  height: 100%;
+}
+
+.frame-306-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.frame-316-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.frame-316-home h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #171717;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.frame-316-home p {
+  color: #5c5c5c;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.frame-304-home {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  background: #ffffff;
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+}
+
+.frame-314-home {
+  gap: 24px;
+}
+
+.frame-305-home h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.frame-305-home p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.email-home {
+  font-size: 14px;
+  color: #cf271a;
+  font-weight: bold;
+}
+
+.frame-312-home {
+  gap: 12px;
+}
+
+.frame-303-home {
+  width: 100%;
+  gap: 8px;
+}
+
+
+
+.frame-303-home label {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 10px;
+}
+
+.frame-302-home,
+.frame-301-home {
+  display: flex;
+  background: #fafafa;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.frame-302-home input,
+.frame-301-home input {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+}
+
+.frame-310-home {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.next-button-home,
+.back-button-home,
+.send-button-home {
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-button-home {
+  background: #cf271a;
+  color: #fffefa;
+  border: none;
+}
+
+.next-button-home:hover {
+  background: #e9554a;
+}
+
+.back-button-home {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  margin-right: 5%;
+}
+
+.send-button-home {
+  background: #cf271a;
+  color: #fffefa;
+  border: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #171717;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .frame-306-home {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding: 32px;
+    border-radius: 16px;
+  }
+
+  .frame-316-home h1 {
+    font-size: 56px;
+    line-height: 67.2px;
+    margin-bottom: 8px;
+  }
+
+  .frame-316-home p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .frame-304-home {
+    width: 850px;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .frame-314-home {
+    gap: 32px;
+  }
+
+  .frame-305-home h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .frame-305-home p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .frame-302-home,
+  .frame-301-home {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .frame-302-home input,
+  .frame-301-home input {
+    font-size: 16px;
+  }
+
+  .frame-310-home {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .next-button-home,
+  .back-button-home,
+  .send-button-home {
+    font-size: 20px;
+    width: 30%;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .back-button-home {
+    margin-right: 5%;
+  }
+}

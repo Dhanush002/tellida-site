@@ -1,0 +1,203 @@
+.remote-general-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.remote-general-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.remote-general-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.remote-general-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services grid */
+.remote-general-services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.8rem 1.5rem;
+}
+
+/* Each service card */
+.remote-service {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 170px; /* fixed height for uniformity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #222;
+}
+
+/* Background image layer (initially hidden) */
+.remote-service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../../../../assets/backhover.jpg'); /* adjust as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Overlay to darken background for better contrast */
+.remote-service::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Ensure content is above overlays */
+.remote-service > * {
+  position: relative;
+  z-index: 2;
+}
+
+.remote-service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.remote-service:hover::before,
+.remote-service:hover::after {
+  opacity: 1;
+}
+
+/* Change text to white on hover */
+.remote-service:hover .remote-service-text h4 {
+  color: #ffffff;
+}
+
+/* Icon wrapper */
+.remote-service-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional icon filter on hover */
+.remote-service:hover .remote-service-icon {
+  filter: brightness(1.3);
+}
+
+/* Title inside card */
+.remote-service-text h4 {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ===== Responsive Breakpoints ===== */
+
+/* Large desktops / widescreens */
+@media (min-width: 1920px) {
+  .remote-general-container {
+    max-width: 1600px;
+  }
+  .remote-general-services {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Medium desktops and laptops */
+@media (max-width: 1366px) {
+  .remote-general-services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Small laptops and tablets landscape */
+@media (max-width: 1024px) {
+  .remote-general-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .remote-service {
+    height: 160px;
+  }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+  .remote-general-title h2 {
+    font-size: 1.6rem;
+    max-width: 95%;
+  }
+  .remote-general-services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+  .remote-service {
+    height: 150px;
+    padding: 1.2rem;
+  }
+}
+
+/* Large smartphones */
+@media (max-width: 414px) {
+  .remote-general-services {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+  .remote-service {
+    height: auto; /* allow height to adjust */
+    padding: 1rem 1.2rem;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+  }
+  .remote-service-icon {
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  .remote-service-text h4 {
+    font-size: 1rem;
+  }
+  .remote-general-title h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra small smartphones */
+@media (max-width: 360px) {
+  .remote-general-title h2 {
+    font-size: 1.2rem;
+  }
+  .remote-service-text h4 {
+    font-size: 0.95rem;
+  }
+  .remote-service {
+    padding: 0.8rem 1rem;
+  }
+}

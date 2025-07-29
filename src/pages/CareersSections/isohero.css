@@ -1,0 +1,84 @@
+.hero-section-life {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-content-life {
+    max-width: 900px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.236);
+    border-radius: 20px;
+    /*backdrop-filter: blur(6px)*/
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  .hero-content-life h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .hero-content-life h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  
+  /* ---------- Responsive Styles ---------- */
+  
+  @media (max-width: 1440px) {
+    .hero-content-life h1 {
+      font-size: 2.6rem;
+    }
+    .hero-content-life h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-section-life {
+      padding: 1.5rem;
+    }
+    .hero-content-life h1 {
+      font-size: 2.4rem;
+    }
+    .hero-content-life h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content-life {
+      padding: 1.2rem;
+    }
+    .hero-content-life h1 {
+      font-size: 2rem;
+    }
+    .hero-content-life h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content-life {
+      padding: 1rem;
+    }
+    .hero-content-life h1 {
+      font-size: 1.6rem;
+    }
+    .hero-content-life h2 {
+      font-size: 1.1rem;
+    }
+  }
+  

@@ -1,0 +1,187 @@
+/* LifeAtTellida Section */
+.remote-main {
+    width: 100%;
+    padding-top: 60px;
+    height: 800px;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    position: relative;
+  }
+  
+  /* Text Container */
+  .frame-149-remotemain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 31%;
+    gap: 32px;
+    top: 215px;
+    left: 120px;
+    gap: var(--sds-size-space-2400);
+  
+  }
+  
+  /* Title */
+  .remote-main-title {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  /* Description */
+  .remote-main-description {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 450px;
+    height: 135px;
+    gap: 0px;
+   color: #353535;
+  }
+  
+  /* Button */
+  .remote-main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 309px;
+    height: 60px;
+    background: #282828;
+    border-radius: 8px;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fffefa;
+    border: none;
+    cursor: pointer;
+    width: 309px;
+    height: 60px;
+    padding: var(--sds-size-space-400) var(--sds-size-space-600)
+      var(--sds-size-space-400) var(--sds-size-space-600);
+    gap: var(--sds-size-space-300);
+    border-radius: var(--CornerSmall);
+  
+  }
+  
+  .remote-main-button .chevron-right {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+  
+  /* Image Container */
+  .image-container-remotemain {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 491px;
+    height: 500px;
+  }
+  
+  .recImage-remotemain{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+  }
+
+
+  
+  
+  @media (max-width: 768px) {
+    /* LifeAtTellida Section */
+    .remote-main {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      padding: 32px 0px;
+      gap: 24px;
+      width: 100%;
+      top: 0px;
+      
+    }
+  
+    /* Text Container */
+    .frame-149-remotemain  {
+      width: 80%;
+      text-align: left; 
+      gap: 16px;
+      
+    }
+  
+    /* Title */
+    .remote-main-title {
+      font-size: 24px; 
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+  
+    /* Description */
+    .remote-main-description {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      height: auto;
+      width: 90%;
+      
+    }
+  
+    /* Button */
+    .remote-main-button {
+      width: 100%; 
+      max-width: 300px; 
+      height: 48px;
+      font-size: 16px;
+      border-radius: 8px;
+      left: 0;
+      margin-top: 10%;
+    }
+  
+    /* Image Container */
+    .image-container-remotemain {
+      width: 80%;
+      height: auto;
+      position: relative;
+      margin-top: 16px; 
+     
+    }
+  
+    .rectangle-image-remotemain {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 16px;
+    }
+  
+    .recImage-remotemain{
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+      padding-right: 35px;
+    }
+  }
+  

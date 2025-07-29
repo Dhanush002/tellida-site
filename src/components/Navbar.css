@@ -1,0 +1,494 @@
+:root {
+  --text-color: #ffffff;
+  --button-red: #e9554a;
+  --font-primary: "SF Pro Text", sans-serif;
+  --navbar-bg: rgba(0, 0, 0, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.3);
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 12px 120px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* Fixed width */
+
+  position: relative; /* Added for absolute positioning of logo */
+}
+
+/* Left Section: Phone Number */
+.navbar-left {
+  font-size: 15px;
+  color: #E3E3E3;
+}
+
+.navbar-phone {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  width: 120px;
+  height: 21px;
+}
+
+.navbar-phone i {
+  margin-right: 8px;
+}
+
+/* Center logo - added absolute centering */
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 110px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #E3E3E3;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.navbar-mobile-link {
+  text-decoration: none;
+  color: #171717;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.navbar-link:hover {
+  color: var(--button-red);
+}
+
+/* Logo Styling (width/height unchanged) */
+.navbar-logo img {
+  width: 74.48px;
+  height: 60px;
+  gap: 0px;
+}
+
+/* Right Section: Social Media Icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-right a {
+  color: #E3E3E3;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: var(--button-red);
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 420px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #171717;
+  background: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-item svg {
+  width: 24px;
+  height: 24px;
+  color: #b3b3b3;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 420px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #171717;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-item svg {
+  width: 24px;
+  height: 24px;
+  color: #b3b3b3;
+}
+
+.navbar-mobile,
+.navbar-menu-icon {
+  display: none;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar-mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar-mobile-menu li {
+  margin: 16px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  align-self: center;
+}
+
+.navbar-mobile-link-other{
+  text-align: center;
+}
+
+.navbar-mobile-menu a {
+  color: #171717;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-mobile-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.phone-icon {
+  width: 13.93px;
+  height: 13.93px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.mobile-phone {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.navbar-close-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-close-btn:hover .close-icon {
+  transform: rotate(90deg);
+}
+
+/* Off-Canvas Styles */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 822px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background: #ffffff;
+  z-index: 1002;
+  transform: translateX(-100%);
+  /* Initially hidden */
+  transition: transform 0.3s ease;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+
+.offcanvas.open {
+  transform: translateX(0);
+  /* Slide into view */
+}
+
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.offcanvas-header h2 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.back-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.back-btn img {
+  width: 54px;
+  height: 54px;
+}
+
+.offcanvas-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.offcanvas-menu li {
+  margin: 16px 0;
+  margin-bottom: 60px;
+}
+
+.offcanvas-menu li a {
+  color: #5C5C5C;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.offcanvas-menu li a:hover {
+  color: #e9554a;
+}
+
+/* Add back button styling */
+.back-btn:hover img {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 4vw;
+  }
+
+  .navbar-menu {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .offcanvas {
+    display: none;
+  }
+}
+
+.navbar-mobile-link-service {
+  color: #171717;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .navbar-menu-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(0px);
+  }
+
+  .navbar-container {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 2%;
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .navbar-menu-icon:hover {
+    color: var(--button-red);
+  }
+
+  .navbar-mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    background: #FFFFFF;
+  }
+}

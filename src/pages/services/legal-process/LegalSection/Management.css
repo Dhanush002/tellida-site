@@ -1,0 +1,140 @@
+.management-section{
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.management-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.management-description {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* === Slider Slide Wrapper === */
+.management-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* === Hide Static Logos === */
+.management-logos {
+  display: none; /* Replaced by slider */
+}
+
+/* === Logo Styling === */
+.management-logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.management-logo:hover {
+  transform: scale(1.05);
+}
+
+/* === Desktop & Laptop Resolutions === */
+/* 2560x1440, 1920x1200, 1680x1050, 1600x1200, 1440x900, 1366x768 */
+@media screen and (max-width: 1920px) {
+  .management-logo {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .management-logo {
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .management-logo {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .management-logo {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .management-logo {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .management-logo {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .management-logo {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .management-logo {
+    width: 90px;
+  }
+}
+
+/* === Tablet Resolutions === */
+/* iPad (768x1024), iPad Pro (1024x1366), Nexus 10 (800x1280), Nexus 7 (600x960) */
+@media screen and (max-width: 768px) {
+  .management-logo {
+    width: 85px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .management-logo {
+    width: 80px;
+  }
+}
+
+/* === Smartphone Resolutions === */
+/* Nexus 5 (360x598), Nexus 5x (412x684), iPhone 6+ (414x736), iPhone 6 (375x667), iPhone 5 (320x568), iPhone 4 (320x480) */
+@media screen and (max-width: 414px) {
+  .management-logo {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .management-logo {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .management-logo {
+    width: 65px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .management-logo {
+    width: 60px;
+  }
+}

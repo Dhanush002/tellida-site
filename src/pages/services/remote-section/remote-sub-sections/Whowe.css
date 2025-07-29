@@ -1,0 +1,148 @@
+/* Section Styling */
+.who-we-are-section {
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 48px;
+    background-color: #ffffff;
+    position: relative;
+    height: 100px;
+    margin-top: 140px;
+    margin-left: 5%;
+   margin-bottom: 10%;
+  }
+  
+  /* Frame-10 Styling (Text Section) */
+  .remote-frame-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 1200px;
+    margin-bottom: 48px;
+    height: 170px;
+    margin-bottom: 17px;
+  }
+
+  .remote-frame-10 h1{
+    line-height: 40px;
+  }
+  
+  .remote-line-1,
+  .remote-line-2,
+  .remote-line-3,
+  .remote-line-4,
+  .remote-line-5 {
+    margin: 40px;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+
+  .remote-line-1{
+    margin-bottom: 0;
+  }
+  
+  .remote-line-4{
+    margin-top: 0;
+  }
+  .remote-image-rectangle7 {
+    width: 100px;
+    height: 60px;
+    gap: 0px;
+    border-radius: var(--CornerExtra-large);
+  }
+  .remote-image-ellipse1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  
+  .remote-frame-144 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .remote-frame-145 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-frame-10 {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+
+  
+  
+  @media (max-width: 768px) {
+    .who-we-are-section {
+      padding: 0px;
+      gap: 24px;
+      margin-bottom: 20%;
+      width: 100%;
+    }
+  
+    .remote-frame-10 {
+      display: none;
+    }
+
+    .mobile-frame-10 {
+      display: flex; 
+      flex-direction: column;
+      
+    }
+
+    .mobile-line-1,
+    .mobile-line-2,
+    .mobile-line-3,
+    .mobile-line-4,
+    .mobile-line-5 {
+      font-family: "SF Pro Display", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 0px;
+    }
+    .mobile-frame-145 {
+      flex-direction: row;
+      align-items: left;
+      gap: 16px;
+      width: auto;
+      height: auto;
+      margin-left: 30%;
+    }
+  
+    .mobile-frame-144 {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+      width: auto;
+      height: auto;
+      margin-left: 10%;
+    }
+  
+    .remote-image-rectangle7 {
+      width: 60px;
+      height: 38px;
+    }
+      
+    .remote-image-ellipse1 {
+      width: 48px;
+      height: 48px;
+      margin-left: 0; 
+    }
+  }
+  

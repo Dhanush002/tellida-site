@@ -1,0 +1,124 @@
+/* Corporate Video Section */
+.company-culture-video {
+  height: 800px;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Rectangle 11 - Background Image */
+.video-background {
+  width: 1200px;
+  height: 666px;
+  top: 57px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 28px;
+}
+
+/* Group 1 - Play Button Container */
+.play-button-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(50% - 50px); 
+  left: calc(50% - 50px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Play Button Image */
+.play-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+/* YouTube Video */
+.youtube-video {
+  width: 1440px;
+  height: 666px;
+  border-radius: 28px;
+  z-index: 4;
+}
+
+
+@media (max-width: 768px) {
+  /* Corporate Video Section */
+  .company-culture-video {
+    width: 90%;
+    height: 666px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 0x;
+    z-index: 2;
+    top: 227px; 
+    overflow: hidden;
+    margin: auto;
+    border-radius: 32px;
+  }
+
+  /* Rectangle 11 - Background Image */
+  .video-background {
+  
+   
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+  }
+
+  /* Group 1 - Play Button Container */
+  .play-button-container {
+    position: absolute;
+    width: 60px; 
+    height: 60px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  /* Play Button Image */
+  .play-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+
+  /* YouTube Video */
+  .youtube-video {
+    width: 100%;
+    height: auto;
+    max-width: 345px; 
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    z-index: 4;
+  }
+
+  /* Adjust Text Content (if necessary) */
+  .video-description {
+    text-align: center; 
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 8px 0;
+    padding: 0 16px; 
+  }
+}

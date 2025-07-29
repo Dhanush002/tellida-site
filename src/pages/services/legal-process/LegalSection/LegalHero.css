@@ -1,0 +1,142 @@
+/* Base Styles */
+.legal-hero {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.legal-hero-content {
+  max-width: 900px;
+}
+
+.legal-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 15px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.legal-tagline {
+  max-width: 600px;
+}
+
+.legal-tagline-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop and Laptop Resolutions */
+@media screen and (max-width: 1366px) {
+  .legal-hero {
+    height: 500px;
+  }
+  .legal-hero-title {
+    font-size: 3rem;
+  }
+  .legal-tagline-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .legal-hero {
+    height: 450px;
+  }
+  .legal-hero-title {
+    font-size: 2.5rem;
+  }
+  .legal-tagline-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .legal-hero {
+    height: 400px;
+    padding: 0 15px;
+  }
+  .legal-hero-title {
+    font-size: 2.2rem;
+  }
+  .legal-tagline-text {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .legal-hero {
+    height: 350px;
+    padding: 0 12px;
+  }
+  .legal-hero-title {
+    font-size: 2rem;
+  }
+  .legal-tagline-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .legal-hero {
+    height: 320px;
+  }
+  .legal-hero-title {
+    font-size: 1.8rem;
+  }
+  .legal-tagline-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 414px) {
+  .legal-hero {
+    height: 280px;
+    padding: 0 10px;
+  }
+  .legal-hero-title {
+    font-size: 1.5rem;
+  }
+  .legal-tagline-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .legal-hero {
+    height: 250px;
+  }
+  .legal-hero-title {
+    font-size: 1.3rem;
+  }
+  .legal-tagline-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .legal-hero {
+    height: 220px;
+  }
+  .legal-hero-title {
+    font-size: 1.1rem;
+  }
+  .legal-tagline-text {
+    font-size: 0.75rem;
+  }
+}

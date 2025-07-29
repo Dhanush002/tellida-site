@@ -1,0 +1,156 @@
+/* ===== Hero Section ===== */
+.call-hero {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+}
+
+/* ===== Hero Content ===== */
+.call-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 720px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.call-hero-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+/* ===== Tagline Section ===== */
+.call-tagline {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 592px;
+  background: rgba(30, 30, 30, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 32px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-tagline-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ===== Responsive Adjustments ===== */
+
+/* Desktop & Large Laptops */
+@media (max-width: 1440px) {
+  .call-hero {
+    height: 780px;
+  }
+}
+
+/* Medium Laptops & Tablets */
+@media (max-width: 1024px) {
+  .call-hero {
+    height: 700px;
+  }
+}
+
+/* iPads, Nexus 10, Nexus 7 */
+@media (max-width: 768px) {
+  .call-hero {
+    height: 650px;
+    background-position: 60% center;
+  }
+
+  .call-hero-content {
+    width: 100%;
+    top: 55%;
+  }
+
+  .call-hero-title {
+    font-size: 32px;
+  }
+
+  .call-tagline {
+    width: 90%;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .call-tagline-text {
+    font-size: 16px;
+  }
+}
+
+/* Smartphones (iPhone 6 Plus, iPhone 6, etc.) */
+@media (max-width: 480px) {
+  .call-hero {
+    height: 550px;
+  }
+
+  .call-hero-content {
+    top: 60%;
+  }
+
+  .call-hero-title {
+    font-size: 24px;
+  }
+
+  .call-tagline {
+    bottom: 16px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .call-tagline-text {
+    font-size: 14px;
+  }
+}
+
+/* Small Devices (iPhone 5/SE, Nexus 5, 320px screens) */
+@media (max-width: 375px) {
+  .call-hero {
+    height: 480px;
+  }
+
+  .call-hero-title {
+    font-size: 20px;
+  }
+
+  .call-tagline-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .call-hero {
+    height: 420px;
+  }
+
+  .call-tagline-text {
+    font-size: 12px;
+  }
+}

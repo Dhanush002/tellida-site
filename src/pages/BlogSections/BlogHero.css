@@ -1,0 +1,93 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About Us Hero Section */
+.about-us-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/Exclude6.jpg") no-repeat center center/cover;
+  border-radius: 0px;
+  overflow: hidden;
+
+}
+
+/* Main Content Section */
+.hero-content-aboutus {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 718px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content-aboutus h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.0025em;
+  margin-bottom: 20px;
+}
+
+/* Tagline Section */
+.hero-tagline {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 592px;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 32px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-tagline p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .hero-content-aboutus h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-tagline p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .hero-content-aboutus h1 {
+    font-size: 2rem;
+  }
+
+  .hero-tagline p {
+    font-size: 0.875rem;
+  }
+}

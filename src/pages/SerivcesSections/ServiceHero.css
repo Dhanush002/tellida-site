@@ -1,0 +1,208 @@
+/* General Styles for Service Hero Section */
+.service-hero {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* Ensure the background image is centered */
+  border-radius: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 850px; /* Default height for large screens */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Main Content Section */
+.hero-content-service {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 718px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content-service h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.0025em;
+  width: 623px;
+  height: 166px;
+  padding-top: 380px;
+  left: 237px;
+  gap: var(--sds-size-space-0);
+  border-radius: 32px 0px 0px 0px;
+}
+
+/* Tagline Section */
+.hero-tagline-service {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 592px;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 32px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-tagline-service p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  max-width: 544px;
+}
+
+/* ====================== Responsive ====================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .service-hero {
+    height: 700px; /* Adjust height for tablets */
+    padding: 0 16px;
+    margin: 40px auto;
+  }
+
+  .hero-content-service {
+    left: 20px;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .hero-content-service h1 {
+    font-size: 42px;
+    padding-top: 150px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-tagline-service {
+    top: 630px;
+    left: 20px;
+    width: 90%;
+    height: auto;
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 16px;
+  }
+
+  .hero-tagline-service p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .service-hero {
+    height: 640px; /* Adjust height for smaller screens */
+    margin-bottom: 150px;
+    top: 80px;
+    padding: 0;
+  }
+
+  .hero-content-service {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-content-service h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.0025em;
+    padding: 0 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-tagline-service {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px auto;
+    text-align: center;
+  }
+
+  .hero-tagline-service p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .service-hero {
+    height: 560px; /* Adjust height for extra small screens */
+    margin-bottom: 100px;
+    top: 60px;
+  }
+
+  .hero-content-service {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .hero-content-service h1 {
+    font-size: 22px;
+    padding: 0 12px;
+  }
+
+  .hero-tagline-service {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 12px;
+    margin: 12px auto;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .hero-tagline-service p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    max-width: 100%;
+  }
+}
