@@ -13,6 +13,7 @@
   text-align: center;
 }
 .how-header h2 {
+  font-family: "SF Pro Display", sans-serif;
   font-size: 40px;
   font-weight: 800;
   color: #0f172a;
@@ -20,12 +21,14 @@
 }
 .how-sub {
   font-size: 18px;
+  font-family: "SF Pro Display", sans-serif;
   color: #f59e0b;
   font-weight: 600;
   margin-bottom: 12px;
 }
 .how-intro {
   font-size: 16px;
+  font-family: "Inter", sans-serif;
   color: #334155;
   line-height: 1.6;
   max-width: 700px;
@@ -49,12 +52,14 @@
 }
 .how-card h3 {
   font-size: 18px;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   margin: 10px 0;
   color: #0f172a;
 }
 .how-card p {
   font-size: 15px;
+  font-family: "Inter", sans-serif;
   color: #374151;
   margin-bottom: 10px;
 }

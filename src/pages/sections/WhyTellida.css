@@ -20,14 +20,14 @@
 .why-text { flex: 1 1 520px; min-width: 280px; }
 
 .why-text h2 {
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 40px; font-weight: 800; letter-spacing: -0.02em;
   margin: 0 0 8px; color: #0f172a; line-height: 1.2;
 }
 
 .intro {
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-size: 18px; line-height: 1.7; color: #334155; margin: 0;
+font-family: "Inter", sans-serif;
+font-size: 18px; line-height: 1.7; color: #334155; margin: 0;
 }
 
 .why-image {
