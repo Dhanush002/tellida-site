@@ -18,6 +18,9 @@ const Global = React.lazy(() => import("./sections/Global"));
 const ContactHome = React.lazy(() => import("./sections/ContactHome")); 
 const Certification = React.lazy(() => import("./sections/Certification"));
 const CeoVideo = React.lazy(() => import("./sections/CeoVideo"));
+const HowWeWork = React.lazy(() => import("./sections/HowWeWork"));
+const FAQSection = React.lazy(() => import("./sections/FAQSection"));
+
 interface SectionWrapperProps {
   children: ReactNode;
 }
@@ -73,6 +76,10 @@ const Home = () => {
         </SectionWrapper>
 
         <SectionWrapper>
+          <HowWeWork />
+        </SectionWrapper>
+
+        <SectionWrapper>
           <OurTeam />
         </SectionWrapper>
 
@@ -98,6 +105,10 @@ const Home = () => {
 
         <SectionWrapper>
           <Certification />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <FAQSection />
         </SectionWrapper>
 
         <SectionWrapper>

@@ -154,11 +154,7 @@ const OurTeam = () => {
       position: "Team Leader - Contact Centre Outsourcing",
       image: salma,
     },
-    {
-      name: "Mishayel Viranjith",
-      position: "Team Leader - Contact Centre Outsourcing",
-      image: mishayel,
-    },
+    
     {
       name: "Krashika Surendran",
       position: "Team Leader - Contact Centre Outsourcing",
@@ -387,14 +383,9 @@ const OurTeam = () => {
 
             {/* Row 4 */}
             <div className="team-row">
-              <TeamCard name="Mishayel Viranjith" position="Team Leader - Contact Centre Outsourcing" image={mishayel} />
+              <TeamCard name="Chamara Jayasanka" position="Lead Accountant - Finance and Accounts Outsourcing" image={chamara} />
               <TeamCard name="Krashika Surendran" position="Team Leader - Contact Centre Outsourcing" image={krashika} />
               <TeamCard name="Razwin Rizwan" position="Team Leader - Contact Centre Outsourcing" image={razwin} />
-            </div>
-
-            {/* Row 5 */}
-            <div className="team-row single-member">
-              <TeamCard name="Chamara Jayasanka" position="Lead Accountant - Finance and Accounts Outsourcing" image={chamara} />
             </div>
           </div>
         )}

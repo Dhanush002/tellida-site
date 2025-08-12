@@ -1,212 +1,150 @@
-/* Section */
+/* ===== Section ===== */
 .why-tellida {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #fff;
+  width: 100%;
   padding: 80px 20px;
   box-sizing: border-box;
-  position: relative;
-  top: 50px;
-  width: 100%;
 }
 
-/* Main Container */
-.why-content-container {
+/* ===== Header (text + image) ===== */
+.why-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1200px;
-  width: 100%;
   flex-wrap: wrap;
-}
-
-/* Text Container */
-.why-text-container {
-  flex: 1 1 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  min-width: 280px;
-}
-
-.why-section-title-why {
-  font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-align: left;
-  color: #171717;
-}
-
-/* Text Content */
-.why-text-content {
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #3b3b3b;
-}
-
-.main-p-text{
-  font-size: 20px;
-}
-
-.why-text-content p {
-  margin-bottom: 16px;
-}
-
-/* Image Container */
-.image-container-why {
-  flex: 1 1 480px;
-  max-width: 592px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.why-tellida-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Accordion */
-.accordion-toggle {
-  display: flex;
+  gap: 36px;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  background-color: #ffa500;
-  color: white;
-  border: none;
-  padding: 0 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 12px;
-  width: 180px;
-  height: 40px;
-  transition: background 0.3s ease;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.accordion-toggle:hover {
-  background-color: #e59400;
+.why-text { flex: 1 1 520px; min-width: 280px; }
+
+.why-text h2 {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 40px; font-weight: 800; letter-spacing: -0.02em;
+  margin: 0 0 8px; color: #0f172a; line-height: 1.2;
 }
 
-.accordion-icon {
-  background-color: white;
-  color: black;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
+.intro {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 18px; line-height: 1.7; color: #334155; margin: 0;
 }
 
-.accordion-content {
-  margin-top: 12px;
-  background-color: #fff7e6;
-  padding: 16px;
-  border-left: 4px solid #ffa500;
-  border-radius: 4px;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
+.why-image {
+  position: relative;
+  flex: 1 1 420px;
+  max-width: 560px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.15);
+}
+.why-image img {
+  display: block; width: 100%; height: auto; object-fit: cover;
+  transform: scale(1.02);
+}
+.img-gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(15,23,42,0) 60%, rgba(15,23,42,0.15));
+  pointer-events: none;
 }
 
-/* ========== Responsive Breakpoints ========== */
+/* ===== Stats ===== */
+.why-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px; margin-top: 16px;
+}
+.why-stat {
+  background: #f8fafc; border: 1px solid #eef2f7; border-radius: 12px;
+  padding: 14px; text-align: center;
+}
+.why-stat-value {
+  font-size: 28px; font-weight: 800; color: #0f172a; line-height: 1;
+}
+.why-stat-value span { font-size: 18px; font-weight: 700; margin-left: 2px; color: #334155; }
+.why-stat-label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #64748b; margin-top: 6px; }
 
-/* Tablets */
+/* ===== Reasons Grid ===== */
+.why-grid {
+  max-width: 1200px; margin: 40px auto 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+.why-card {
+  position: relative;
+  background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px;
+  padding: 18px 18px 18px 52px;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  outline: none;
+}
+.why-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); border-color: #d1d5db; }
+.why-card:focus-visible { box-shadow: 0 0 0 3px rgba(59,130,246,0.35); border-color: #93c5fd; }
+
+.why-card-badge {
+  position: absolute; left: 14px; top: 16px;
+  width: 28px; height: 28px; border-radius: 8px;
+  background: #fef3c7; color: #92400e; font-weight: 800; display: grid; place-items: center;
+}
+.why-card h3 {
+  font-size: 16.5px; font-weight: 700; color: #0f172a; margin: 0 0 6px;
+}
+.why-card p {
+  font-size: 14.5px; color: #374151; margin: 0;
+}
+
+/* ===== Services ===== */
+.why-services {
+  max-width: 1200px; margin: 50px auto 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+.service-card {
+  background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 20px;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.service-card:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(0,0,0,0.07); border-color: #d1d5db; }
+.service-card h3 { font-size: 18px; font-weight: 800; color: #0f172a; margin: 0 0 6px; }
+.service-card p { font-size: 15px; color: #334155; margin: 0 0 8px; }
+.service-card ul { margin: 8px 0 0; padding-left: 18px; }
+.service-card li { margin: 6px 0; font-size: 14.5px; color: #374151; }
+
+/* ===== CTA ===== */
+.why-cta {
+  max-width: 1200px; margin: 60px auto 0; text-align: center;
+  background: #0f172a; color: #fff; padding: 28px 22px; border-radius: 16px;
+}
+.why-cta h3 { font-size: 24px; font-weight: 900; margin: 0 0 6px; }
+.why-cta p { font-size: 16px; opacity: .95; margin: 0 0 14px; }
+.cta-button {
+  display: inline-block; padding: 12px 20px; border-radius: 999px; text-decoration: none;
+  background: #f59e0b; color: #1f2937; font-weight: 800; transition: transform 140ms ease, background 140ms ease;
+}
+.cta-button:hover { transform: translateY(-1px); background: #d97706; color: #111827; }
+
+/* ===== Accessibility helpers ===== */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .why-content-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .why-text-container {
-    width: 100%;
-    align-items: center;
-  }
-
-  .why-section-title-why {
-    font-size: 32px;
-    line-height: 1.4;
-  }
-
-  .why-text-content {
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: left;
-  }
-
-  .image-container-why {
-    width: 100%;
-    max-width: 600px;
-  }
+  .why-text h2 { font-size: 32px; }
+  .intro { font-size: 16px; }
+  .why-stats { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Phones */
 @media (max-width: 768px) {
-  .why-tellida {
-    padding: 60px 16px;
-    top: 0;
-  }
-
-  .why-section-title-why {
-    font-size: 24px;
-  }
-
-  .accordion-toggle {
-    width: 100%;
-    font-size: 16px;
-    justify-content: center;
-  }
-
-  .accordion-icon {
-    margin-left: 8px;
-  }
-
-  .why-text-content {
-    font-size: 14px;
-  }
-
-  .accordion-content {
-    font-size: 14px;
-  }
+  .why-tellida { padding: 60px 16px; }
+  .why-text h2 { font-size: 28px; text-align: center; }
+  .intro { font-size: 15px; text-align: center; }
+  .why-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 }
 
-/* Small Phones */
-@media (max-width: 480px) {
-  .why-text-container {
-    gap: 16px;
-  }
+@media (max-width: 520px) {
+  .why-stats { grid-template-columns: repeat(2, 1fr); }
+}
 
-  .why-section-title-why {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .why-text-content{
-    text-align: center;
-  }
-
-  .accordion-toggle {
-    height: 36px;
-    font-size: 14px;
-  }
-
-  .accordion-icon {
-    font-size: 18px;
-    width: 20px;
-    height: 20px;
-  }
+@media (max-width: 420px) {
+  .why-stats { grid-template-columns: 1fr; }
 }

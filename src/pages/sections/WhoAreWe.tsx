@@ -8,9 +8,9 @@ const WhoWeAre: React.FC = () => {
       {/* Desktop Text */}
       <div className="frame-10">
         <p className="line-1">
-          We provide tailored outsourcing solutions across <br />
-          legal, finance, tech support, and contact centre services, <br />
-          helping businesses streamline operations and grow efficiently.
+          We provide tailored business process outsourcing solutions for <br />
+          UK-based law firms and enterprises spanning legal support, finance, <br />
+          tech assistance, and contact centre services. Our solutions help you streamline operations, reduce costs, and scale efficiently.
         </p>
       </div>
 

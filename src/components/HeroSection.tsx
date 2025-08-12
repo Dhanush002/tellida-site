@@ -43,10 +43,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
        <div className="overlay"></div>
       <div className="hero-content">
         <h1>
-          Empowering Growth Through <br /> Smart Outsourcing Solutions
+          Empowering UK Businesses with Smart Business Process Outsourcing Solutions
         </h1>
         <p>
-          {description}
+          {description} 
         </p>
         <div className="hero-buttons">
           <button className="btn btn-primary" onClick={() => navigate("/contact-us")}>Book for Consultation</button>

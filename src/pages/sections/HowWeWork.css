@@ -1,0 +1,125 @@
+    /* ===== Section Wrapper ===== */
+.how-we-work {
+  background: #ffffff;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+.how-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.how-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+.how-sub {
+  font-size: 18px;
+  color: #f59e0b;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.how-intro {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Steps Grid ===== */
+.how-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  gap: 24px;
+}
+.how-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.how-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #0f172a;
+}
+.how-card p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+.how-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.how-card li {
+  font-size: 14.5px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+.how-step-number {
+  background: #e9554a;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CTA ===== */
+.how-cta {
+  margin-top: 60px;
+  text-align: center;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 28px 22px;
+  border-radius: 16px;
+}
+.how-cta h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 6px;
+}
+.how-cta p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin: 0 0 14px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #f59e0b;
+  color: #1f2937;
+  font-weight: 800;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 140ms ease, background 140ms ease;
+}
+.cta-button:hover {
+  transform: translateY(-1px);
+  background: #d97706;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .how-header h2 {
+    font-size: 28px;
+  }
+  .how-sub {
+    font-size: 16px;
+  }
+}
