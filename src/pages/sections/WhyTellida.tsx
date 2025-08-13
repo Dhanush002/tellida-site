@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import "./WhyTellida.css";
 import WhyTellidaImage from "../../assets/WhyTellida.jpg";
+import { Link } from "react-router-dom";
 
 // ===== Animation helpers =====
 const fadeUp = (delay = 0) => ({
@@ -168,19 +169,9 @@ const WhyTellida: React.FC = () => {
       >
         <h3>Ready to build your future-ready team?</h3>
         <p>Book a discovery call and see a tailored costed plan for your firm.</p>
-        <a
-          className="cta-button"
-          href="contact-us"
-          onClick={(e) => {
-            const el = document.querySelector("contact-us");
-            if (el) {
-              e.preventDefault();
-              el.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-          }}
-        >
+        <Link className="cta-button" to="/contact-us">
           Book a Discovery Call
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

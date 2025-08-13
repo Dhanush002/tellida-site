@@ -91,13 +91,6 @@ const OurTeam = () => {
         "https://www.linkedin.com/in/pulini-aravinthan-b52a7a49?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAApNiO4BxfevLV1aTX9U7r2ix20e8luvr3I&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BgdwcaMq0SIu6Gu9%2FvJsT6w%3D%3D",
     },
     {
-      name: "Suren Perera",
-      position: "Manager - Administration",
-      image: member6,
-      linkedin:
-        "https://www.linkedin.com/in/suren-perera-652a2219?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAPjex4Bs1ZBFsDqKPbSdagIdaB3vOdM5oc&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3Bun6Lwm5jQk%2BXl0VIRU4ZTw%3D%3D",
-    },
-    {
       name: "Dulaj Dilshan",
       position: "Manager - Business Development",
       image: dulaj,
