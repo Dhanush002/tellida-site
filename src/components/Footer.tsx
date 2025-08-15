@@ -217,9 +217,8 @@ const Footer = () => {
           <p className="mobileNum">
             <br /><b>
               SL : +94 117743556 <br />
-              SL : +94 117743556 <br />
-              
-              UK : +44 7404408795
+              SL : info@tellida.com <br />
+              UK : +44 7404408795 
               </b></p>
           </div>
 

@@ -1,25 +1,26 @@
-/* Container with gradient background, shadow, and rounded corners */
+/* Container with white background, modern shadow, and rounded corners */
 .certified-data-security-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 50px auto;
   padding: 40px 30px;
-  background: linear-gradient(135deg, #2c768c 0%, #16a0aa 100%);
-  box-shadow: 0 8px 24px rgba(0, 0, 50, 0.1);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);  /* Soft, modern shadow */
   border-radius: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #1b2838;
+  color: #333;  /* Darker text for good contrast */
   box-sizing: border-box;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect to lift container */
+/* Hover effect to lift the container slightly */
 .certified-data-security-container:hover {
-  box-shadow: 0 12px 36px rgba(0, 0, 50, 0.15);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
-/* Hero section */
+/* Hero section with light background */
 .security-hero {
-  background-color: #f0faff;
+  background-color: #fafafa;  /* Light gray background */
   border-radius: 12px;
   padding: 40px 20px;
   margin-bottom: 48px;
@@ -29,6 +30,7 @@
   text-align: center;
 }
 
+/* Hero content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -38,15 +40,16 @@
 
 .hero-text h1 {
   font-size: clamp(2rem, 4vw, 2.8rem);
-  color: #000000;
+  color: #111;  /* Darker text color */
   margin-bottom: 0.6rem;
-  text-shadow: 1px 1px 2px rgba(0, 69, 124, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
 }
 
 .hero-text p {
   font-size: clamp(1.1rem, 2vw, 1.25rem);
-  color: #101010;
+  color: #444;  /* Lighter text color */
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .iso-image {
@@ -58,28 +61,28 @@
 .certified-data-security-container section:not(.security-hero) {
   margin-bottom: 48px;
   padding: 20px 25px;
-  background-color: #f5faff;
+  background-color: #f9f9f9;  /* Soft gray for sections */
   border-radius: 10px;
-  border: 1px solid #d1e4ff;
-  box-shadow: inset 0 0 15px #dcecff;
+  border: 1px solid #e0e0e0;  /* Light gray border */
+  box-shadow: inset 0 0 15px #f0f0f0;
 }
 
-/* Section headings with accent color */
+/* Section headings with modern text */
 .certified-data-security-container h2 {
   font-size: clamp(1.9rem, 2.5vw, 2.7rem);
   font-weight: 700;
   margin-bottom: 18px;
-  color: #000000;
-  text-shadow: 1px 1px 3px rgba(0, 120, 212, 0.3);
+  color: #111;  /* Dark text for headings */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);  /* Light shadow */
   letter-spacing: 0.03em;
 }
 
-/* Paragraphs with good spacing and slightly muted color */
+/* Paragraphs with good spacing and lighter color */
 .certified-data-security-container p {
   font-size: clamp(1.1rem, 1.8vw, 1.25rem);
   line-height: 1.65;
   margin-bottom: 22px;
-  color: #2e3e56;
+  color: #555;  /* Subtle text color */
 }
 
 /* Lists styled with custom icons */
@@ -87,7 +90,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  color: #2e3e56;
+  color: #555;
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   line-height: 1.55;
 }
@@ -104,7 +107,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #0078d4;
+  color: #66bb6a;  /* Green check for modern, positive feel */
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1;
@@ -112,7 +115,7 @@
 
 /* Emphasis text */
 .certified-data-security-container strong {
-  color: #005a9e;
+  color: #333;  /* Darker strong text */
 }
 
 /* Special bold center message */
@@ -121,8 +124,8 @@
   font-size: clamp(1.2rem, 1.9vw, 1.4rem);
   margin-top: 28px;
   text-align: center;
-  color: #00457c;
-  text-shadow: 1px 1px 2px rgba(0, 69, 124, 0.3);
+  color: #333;  /* Dark text for emphasis */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* RESPONSIVE STYLES */

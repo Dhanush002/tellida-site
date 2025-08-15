@@ -91,7 +91,7 @@
 .frame-305 p {
   font-family: var(--font-secondary);
   font-size: 16px;
-  color: #000;
+  color: #e9554a;
 }
 
 .email {
@@ -238,6 +238,7 @@
   .frame-305 p,
   .email {
     font-size: 14px;
+    
   }
 
   .frame-303 label {

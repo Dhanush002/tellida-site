@@ -74,8 +74,7 @@ const GlobalContacts: React.FC = () => {
               <div className="frame-305">
                 <h4>For Inquiries</h4>
                 <p>
-                  Please submit the form below or email to{" "}
-                  <span className="email">jobs@tellida.com</span>
+                  Please submit the below form
                 </p>
               </div>
               <div className="frame-312">

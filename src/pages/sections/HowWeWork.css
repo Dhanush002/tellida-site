@@ -40,8 +40,9 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 on desktop */
   gap: 24px;
+  box-sizing: border-box;
 }
 .how-card {
   background: #ffffff;
@@ -126,5 +127,17 @@
   }
   .how-sub {
     font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .how-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .how-grid {
+    grid-template-columns: 1fr; /* 1 per row */
   }
 }

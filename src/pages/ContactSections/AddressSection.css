@@ -75,8 +75,8 @@ html, body {
 }
 
 .corporate-contact {
-  background: var(--highlight-color);
-  color: #fafafa;
+  background: #fff;
+  color: #000000;
 }
 
 .card-header-contact {
@@ -111,7 +111,7 @@ html, body {
 }
 
 .corporate-contact .card-location-contact span {
-  color: #fafafa;
+  color: #000000;
 }
 
 /* Card Content */
@@ -134,7 +134,10 @@ html, body {
 }
 
 .corporate-contact .card-details-contact {
-  color: #fafafa;
+  color: #000000;
+}
+.corporate-contact .phone-address-contact {
+  color: var(--highlight-color);
 }
 
 /* Responsive: Tablet */
