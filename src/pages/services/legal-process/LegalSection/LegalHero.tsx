@@ -16,8 +16,8 @@ const LegalHero: React.FC = () => {
       {/* Tagline Section */}
       <div className="legal-tagline">
         <p className="legal-tagline-text">
-          Efficient conveyancing support, from client onboarding to HMLR
-          registration, minimal solicitor involvement.
+          Streamlined, end-to-end conveyancing solutions from client onboarding and property searches to contract preparation and HMLR registration, 
+          handled with precision and minimal solicitor involvement.
         </p>
       </div>
 

@@ -1,29 +1,38 @@
-/* SupportServices.css */
-
-/* Reset & base */
+/* ========== Support Section ========== */
 .support-section {
-  padding: 60px 20px;
-  background: #f9fafc;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #1a1a1a;
-  max-width: 1100px;
+  padding: 80px 20px;
+  background:#ffffff;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #111827;
+  max-width: 1300px;
   margin: 0 auto;
   box-sizing: border-box;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+  border-radius: 20px;
 }
 
 /* Header */
 .support-header {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .support-title {
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 0.05em;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin: 0;
+  position: relative;
+}
+
+.support-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e9554a;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 /* Grid container */
@@ -32,57 +41,84 @@
   justify-content: center;
 }
 
-/* Inner container for top row */
+/* Top row as responsive grid */
 .support-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 0 10px;
   box-sizing: border-box;
 }
 
-/* Each card */
+/* Modern Card */
 .support-card {
-  background: white;
-  padding: 25px 20px;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 82, 204, 0);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 30px 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(229, 231, 235, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
   cursor: default;
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.support-card:hover,
-.support-card:focus-within {
-  box-shadow: 0 12px 30px rgba(0, 82, 204, 0);
-  transform: translateY(-6px);
-  outline: none;
+.support-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 18px 18px 0 0;
 }
 
-/* Card title */
+/* Hover effect */
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* Card Title */
 .support-card-title {
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 18px;
-  color: #000000;
+  margin-bottom: 20px;
+  color: #0f172a;
   text-align: center;
 }
 
-/* Description list */
+/* Description List */
 .support-card-description ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #333;
-  font-size: clamp(0.9rem, 1.7vw, 1.05rem);
-  line-height: 1.5;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* Responsive layouts */
+.support-card-description ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.support-card-description ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #e9554a86;
+  font-weight: bold;
+}
+
+/* ========== Responsive Breakpoints ========== */
 
 /* Large tablets and below (max 1024px) */
 @media (max-width: 1024px) {
@@ -93,7 +129,7 @@
   }
 
   .support-section {
-    padding: 50px 15px;
+    padding: 60px 15px;
   }
 }
 
@@ -109,59 +145,59 @@
   }
 
   .support-card {
-    padding: 20px 18px;
+    padding: 24px 18px;
   }
 }
 
-/* Smartphones (max 414px, including iPhone 6 Plus, Nexus 5x) */
+/* Smartphones (max 414px) */
 @media (max-width: 414px) {
   .support-section {
-    padding: 40px 15px;
+    padding: 50px 15px;
   }
 
   .support-title {
     font-size: 1.9rem;
   }
 
-  .support-card-description ul {
-    font-size: 0.95rem;
+  .support-card-title {
+    font-size: 1.15rem;
   }
 
-  .support-card {
-    padding: 18px 15px;
+  .support-card-description ul li {
+    font-size: 0.95rem;
   }
 }
 
-/* Small smartphones (max 360px, iPhone 5, Nexus 5) */
+/* Small smartphones (max 360px) */
 @media (max-width: 360px) {
   .support-section {
-    padding: 30px 12px;
+    padding: 40px 12px;
   }
 
   .support-title {
     font-size: 1.7rem;
   }
 
-  .support-card-description ul {
+  .support-card-description ul li {
     font-size: 0.9rem;
   }
 
   .support-card {
-    padding: 15px 12px;
+    padding: 18px 14px;
   }
 }
 
-/* Very small phones (max 320px, iPhone 4) */
+/* Very small phones (max 320px) */
 @media (max-width: 320px) {
   .support-title {
     font-size: 1.6rem;
   }
 
-  .support-card-description ul {
+  .support-card-description ul li {
     font-size: 0.85rem;
   }
 
   .support-card {
-    padding: 12px 10px;
+    padding: 16px 12px;
   }
 }

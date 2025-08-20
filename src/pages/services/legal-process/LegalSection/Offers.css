@@ -3,6 +3,7 @@
   width: 100%;
   background: #ffffff;
   display: flex;
+  flex-direction: column;   /* stack container + CTA */
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
@@ -81,6 +82,48 @@
   border-radius: 16px;
 }
 
+/* ===== CTA ===== */
+.why-cta {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 0;
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 28px 22px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.why-cta h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 6px;
+}
+
+.why-cta p {
+  font-size: 16px;
+  opacity: .95;
+  margin: 0 0 14px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #f59e0b;
+  color: #1f2937;
+  font-weight: 800;
+  transition: transform 140ms ease, background 140ms ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  background: #d97706;
+  color: #111827;
+}
+
 /* ========== Responsive Breakpoints ========== */
 
 /* Tablets and smaller */
@@ -103,6 +146,18 @@
   .offer-description {
     font-size: 15px;
   }
+
+  .why-cta {
+    padding: 20px 16px;
+  }
+
+  .why-cta h3 {
+    font-size: 20px;
+  }
+
+  .why-cta p {
+    font-size: 14px;
+  }
 }
 
 /* Phones (up to 414px) */
@@ -122,6 +177,19 @@
   .offer-image {
     height: 200px;
   }
+
+  .why-cta h3 {
+    font-size: 18px;
+  }
+
+  .why-cta p {
+    font-size: 13px;
+  }
+
+  .cta-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }
 
 /* Small phones (375px and under) */
@@ -137,6 +205,14 @@
   .offer-image {
     height: 180px;
   }
+
+  .why-cta h3 {
+    font-size: 16px;
+  }
+
+  .why-cta p {
+    font-size: 12px;
+  }
 }
 
 /* Very small phones (320px and under) */
@@ -151,5 +227,13 @@
 
   .offer-image {
     height: 160px;
+  }
+
+  .why-cta h3 {
+    font-size: 15px;
+  }
+
+  .why-cta p {
+    font-size: 11px;
   }
 }

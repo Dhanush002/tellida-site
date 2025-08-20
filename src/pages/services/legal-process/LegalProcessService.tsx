@@ -2,6 +2,7 @@ import React, { ReactNode, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import NavbarOther from "../../../components/NavbarOther";
+import FAQSection from "../../sections/FAQSection";
 
 
 // Lazy loaded components
@@ -16,6 +17,8 @@ const Offer = React.lazy(() => import("./LegalSection/Offers"));
 const SupportServices = React.lazy(() => import("./LegalSection/SupportServices"));
 const BusinessServices = React.lazy(() => import("./LegalSection/BusinessServices"));
 const LegalTeam = React.lazy(() => import("./LegalSection/LegalTeam"));
+const Testimonials = React.lazy(() => import("./LegalSection/Testimonials"));
+const FAQ = React.lazy(() => import("../../sections/FAQSection"));
 const GlobalContact = React.lazy(() => import("./LegalSection/LegalContact"))
 interface SectionWrapperProps {
   children: ReactNode;
@@ -56,12 +59,18 @@ const LegalProcessService: React.FC = () => {
           <General />
         </SectionWrapper>
 
+        
+
         <SectionWrapper>
-          <Management />
+          <Management />  
         </SectionWrapper>
 
         <SectionWrapper>
           <SupportServices />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Testimonials />
         </SectionWrapper>
 
         <SectionWrapper>
@@ -85,6 +94,10 @@ const LegalProcessService: React.FC = () => {
        <SectionWrapper>
           <BusinessServices />
         </SectionWrapper> 
+
+        <SectionWrapper>
+          <FAQSection />
+        </SectionWrapper>
 
         <SectionWrapper>
           <ISOServices />
