@@ -17,6 +17,38 @@
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
+.certificate-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.certificate-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.certificate-card:hover {
+  transform: scale(1.02);
+}
+
+.certificate-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.certificate-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
 
 /* Hero section with light background */
 .security-hero {

@@ -10,14 +10,13 @@ const LegalHero: React.FC = () => {
     >
       {/* Main Hero Section */}
       <div className="legal-hero-content">
-        <h1 className="legal-hero-title">Legal Process Outsourcing</h1>
+        <h1 className="legal-hero-title">Conveyancing Process Outsourcing</h1>
       </div>
 
       {/* Tagline Section */}
       <div className="legal-tagline">
         <p className="legal-tagline-text">
-          Streamlined, end-to-end conveyancing solutions from client onboarding and property searches to contract preparation and HMLR registration, 
-          handled with precision and minimal solicitor involvement.
+          Streamlined,End-to-end conveyancing solutions, from onboarding and property searches to contract preparation and HMLR registration, with minimal solicitor involvement.
         </p>
       </div>
 

@@ -2,6 +2,8 @@
 import React from "react";
 import "./CertifiedDataSecurity.css";
 import iso from "../../assets/iso.png";
+import certificateImg from "../../assets/ISO_CERT.png";
+
 
 
 const CertifiedDataSecurity = () => {
@@ -56,6 +58,15 @@ const CertifiedDataSecurity = () => {
           audits ensure continuous improvement.
         </p>
       </section>
+      <section className="certificate-section">
+          <h2>Our ISO 27001:2022 Certificate</h2>
+          <div className="certificate-card">
+            <img src={certificateImg} alt="ISO 27001:2022 Certificate" />
+            <p>Officially certified by accredited body</p>
+          </div>
+        </section>
+
+
 
       <section className="security-values">
         <h2>What This Means for Our Clients</h2>

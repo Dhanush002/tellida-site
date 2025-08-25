@@ -18,7 +18,7 @@ const SupportServices = React.lazy(() => import("./LegalSection/SupportServices"
 const BusinessServices = React.lazy(() => import("./LegalSection/BusinessServices"));
 const LegalTeam = React.lazy(() => import("./LegalSection/LegalTeam"));
 const Testimonials = React.lazy(() => import("./LegalSection/Testimonials"));
-const FAQ = React.lazy(() => import("../../sections/FAQSection"));
+const LegalFAQ = React.lazy(() => import("./LegalSection/LegalFAQ"));
 const GlobalContact = React.lazy(() => import("./LegalSection/LegalContact"))
 interface SectionWrapperProps {
   children: ReactNode;
@@ -96,7 +96,7 @@ const LegalProcessService: React.FC = () => {
         </SectionWrapper> 
 
         <SectionWrapper>
-          <FAQSection />
+          <LegalFAQ />
         </SectionWrapper>
 
         <SectionWrapper>

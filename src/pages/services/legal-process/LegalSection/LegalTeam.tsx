@@ -276,13 +276,12 @@ const OurTeam = () => {
               position="Lead Supervisor - Legal Process Outsourcing"
               image={kershal}
             />
-
-<TeamCard
+            <TeamCard
               name="Ruqayya Ifham"
               position="Lead Supervisor - Legal Process Outsourcing"
               image={ruqayya}
             />
-
+            
           </div>
           {/* Row 2 */}
           <div className="team-row">
